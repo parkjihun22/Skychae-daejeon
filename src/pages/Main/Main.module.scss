@@ -1,0 +1,1391 @@
+/* styles.css */
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.mainImage {
+    width: 100%;               /* 가로 폭을 100%로 */
+    height: 100%;              /* 세로 높이는 자동으로 비율에 맞게 조정 */
+    object-fit: cover;         /* 이미지를 비율에 맞게 커버 */
+    animation: fadeInScale 1.5s ease-out forwards; /* 가운데에서 퍼지는 페이드 애니메이션 */
+}
+
+
+.subPinkImg {
+    position: absolute;
+    left: 28vw; /* 화면 오른쪽 끝으로 배치 */
+    top: -3vw; /* 세로 중앙 배치 (필요에 따라 수정 가능) */
+    width: 8vw; /* 크기 조정 (필요에 따라 변경) */
+    z-index: 1; /* 텍스트와 겹치지 않도록 설정 */
+    animation: subPinkImgFadeIn 1.5s ease-out forwards 1.5s; /* 서서히 나타나게 */
+}
+
+@keyframes fadeInScale {
+    0% {
+        transform: scale(0.9); /* 처음에는 이미지 크기가 작고 */
+        opacity: 0; /* 투명한 상태 */
+    }
+    100% {
+        transform: scale(1); /* 최종적으로 원래 크기로 확대 */
+        opacity: 1; /* 불투명하게 */
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;    
+    animation: fadeIn 1.5s ease-in-out forwards; /* 오버레이도 가운데에서 퍼지며 나타남 */
+}
+
+.mainImageTextBox {
+    font-weight: 900;
+    position: absolute;
+    top: 35%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    text-align: center;
+    opacity: 0;
+    animation: textFadeIn 2s forwards 0.5s; /* 텍스트가 서서히 나타나게 */
+    padding: 0 15px; /* PC에서 여백 추가 */
+}
+
+.mainImageTextSub {
+    font-size: 20px; /* 텍스트2와 크기 동일 */
+    color: #ffffff;
+    font-weight: normal;
+    margin-bottom: 10px;
+    animation: textSlideIn 1s ease-in-out forwards; /* 텍스트 슬라이드 애니메이션 */
+}
+
+.greyText {
+    font-size: 30px; /* 텍스트2 가장 큰 크기 */
+    font-family: 'Paperlogy-8ExtraBold';
+    color: #fbf70a; /* 회색 텍스트 */
+}
+
+.blueText {
+    font-family: 'GongGothicMedium';
+    color: #ffffff; /* 파랑 텍스트 */   
+}
+
+
+.grandOpenText {
+    font-family: 'Paperlogy-8ExtraBold';
+    font-size: 30px;
+    font-weight: bold;
+    color: #0c5e98; /* 강조 색상 */
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .grandOpenText1 {
+    font-family: 'Paperlogy-8ExtraBold';
+    margin-top: 1.5vw;
+    font-size: 35px;
+    font-weight: bold;
+    color: #ffffff; /* 강조 색상 */
+    text-align: center;
+
+  }
+
+
+
+
+.mainImageTitleBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    animation: titleBoxSlideIn 1s ease-in-out forwards 1s; /* 제목 상자 슬라이드 애니메이션 */
+}
+
+.mainImageText {
+    font-family: 'Paperlogy-8ExtraBold';
+    font-weight: 400;
+    font-size: 30px; /* 텍스트2 가장 큰 크기 */
+    margin: 1vw 0;
+    color: #FFFFFF; /* 파랑 색상 */
+}
+
+/* 텍스트 애니메이션 */
+@keyframes textFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes textSlideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes titleBoxSlideIn {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+/* 모바일 화면을 위한 CSS */
+@media (max-width: 900px) {
+    .mainImageTextBox1 {
+        
+        position: absolute;
+        top: 18%; /* 모바일에서 더 상단에 위치 */
+        left: 50%;
+        transform: translateX(-50%); /* 중앙 정렬 */
+        color: #FFFFFF;
+        text-align: center;
+        opacity: 0;
+        animation: textFadeIn 2s forwards 0.5s;
+        padding: 0 10px; /* 화면 크기에 맞게 여백 추가 */
+    }
+
+    .mainImageTextSub1 {
+        font-family: 'SUIT-Regular';    
+        color: #ffffff; /* 회색 */
+        font-size: 2vw; /* 모바일에서 글자 크기 줄임 */
+        line-height: 1.4;
+        margin-bottom: 5vw; /* 모바일에서 여백 조금 줄임 */
+        animation: slideUp 1s ease-out forwards; /* 텍스트 슬라이드 애니메이션 */
+    }
+
+    .mainImageText1 {
+        font-family: 'GongGothicMedium';
+        font-size: 3vw; /* 모바일에서 더 작은 글자 크기 */
+        font-weight: bold;
+        line-height: 0.5; /* 텍스트 간격 조정 */
+        color: #ffffff; /* 파랑 색상 */
+        animation: fadeInUp 1.5s ease-out forwards 0.5s; /* 점차적으로 나타나며 올라오는 효과 */
+    }
+
+    .mainImageTitleBox1 {
+        font-size: 40px; /* 텍스트2 가장 큰 크기 */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        color: #FFFFFF; /* 파랑 색상 */
+    }
+
+    .greyText1 {
+        font-size: 30px; /* 텍스트2 가장 큰 크기 */
+        font-family: 'Paperlogy-8ExtraBold';
+        color: #fbf70a; /* 회색 텍스트 */
+        
+    }
+
+    .grandOpenText1 {
+        font-family: 'Paperlogy-8ExtraBold';
+        font-size: 25px;
+        font-weight: bold;
+        color: #eef10b; /* 강조 색상 */
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .grandOpenText3 {
+        font-family: 'Paperlogy-8ExtraBold';
+        font-size: 30px;
+        font-weight: bold;
+        color: #FFFFFF; /* 강조 색상 */
+        text-align: center;
+        margin-top: 40px;
+      }
+
+
+
+
+    
+}
+
+/* 텍스트 페이드 인 애니메이션 */
+@keyframes textFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* 슬라이드 업 애니메이션 */
+@keyframes slideUp {
+    0% {
+        transform: translateY(30px); /* 텍스트가 아래에서 시작 */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); /* 자연스럽게 위로 올라옴 */
+        opacity: 1;
+    }
+}
+
+/* 점차적으로 나타나며 올라오는 애니메이션 */
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(50px); /* 텍스트가 아래에서 시작 */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); /* 자연스럽게 위로 올라옴 */
+        opacity: 1;
+    }
+}
+
+
+
+
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fffbf5;
+
+    .textBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 7vw;
+        padding-top: 9vw;
+
+        font-family: 'HakgyoansimBareonbatangB';
+        font-weight: 700;
+        font-size: 3.5vw;
+
+        .text1 {
+            font-size: 2.5vw;
+            color: #c98f25;
+        }
+
+        .text2 {
+            margin-top: 3vw;
+            font-size: 1.5vw;
+            color: #461900;
+        }
+
+        .text3 {
+            margin-top: 4vw;
+            font-size: 1vw;
+            line-height: 2vw;
+            color: #a2978a;
+        }
+
+        .text4 {
+            margin-top: 5vw;
+            margin-left: 2vw;
+            font-size: 1.2vw;
+            color: #241400;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+
+    .menuBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+        height: 100%;
+        background-color: #FFFFFF;
+
+        img {
+            width: 30%;
+            margin-top: 5vw;
+        }
+
+        .btn {
+            margin-top: 3vw;
+            padding: 1vw 1.5vw;
+            background-color: #6e5e55;
+            border-radius: 10vw;
+            color: #FFFFFF;
+            font-size: 1.2vw;
+            text-decoration: none;
+        }
+    }
+}
+
+.section2 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #fff6ea 85%, #c4825f 15%);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .textBox {
+        margin-top: 10vw;
+        margin-left: 8vw;
+        font-weight: 700;
+        font-size: 3.5vw;
+
+        .text1,
+        .text2,
+        .text3,
+        .text4,
+        .text5 {
+            opacity: 0;
+            animation: fadeUp 1.8s ease forwards;
+        }
+
+        .text1 {
+            font-size: 1.5vw;
+            animation-delay: 0.3s;
+            color: #c98f25;
+        }
+
+        .text2 {
+            margin-top: 1.0vw;
+            line-height: 3.5vw;
+            font-size: 2vw;
+            animation-delay: 0.6s;
+            color: #461900;
+        }
+
+        .text3 {
+            margin-top: 3.8vw;
+            font-size: 1vw;
+            animation-delay: 0.9s;
+            color: #a2978a;
+        }
+
+        .text4 {
+            margin-top: 1.5vw;
+            line-height: 2vw;
+            font-size: 1vw;
+            animation-delay: 1.2s;
+            color: #381400;
+        }
+
+        .text5 {
+            margin-top: 1.5vw;
+            line-height: 1.8vw;
+            font-size: 1vw;
+            animation-delay: 1.5s;
+            color: #5e5e5e;
+        }
+
+        span {
+            font-weight: 900;
+        }
+    }
+
+    img {
+        margin-top: 6vw;
+        margin-right: 5vw;
+        width: 37vw;
+        height: 40vw; /* width와 height를 같게 설정 */
+        border-radius: 50%; /* 원형으로 만들기 */
+        object-fit: cover; /* 이미지 왜곡 방지 */
+        display: block;
+    }
+    
+    
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section3 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1vw;
+
+        width: 25%;
+        height: 100vh;
+        background-color: #fff6ea;
+
+        img {
+            width: 7vw;
+        }
+    }
+
+    .boxTitle {
+        font-family: 'HakgyoansimBareonbatangB';
+        font-weight: 700;
+        margin-top: 2vw;
+        font-size: 2vw;
+        color: #b88c52;
+    }
+
+    .boxText1 {
+        text-align: center;
+        margin-top: 2vw;
+        font-size: 1.2vw;
+        line-height: 1.5vw;
+    }
+
+    .boxText2 {
+        text-align: center;
+        margin-top: 2vw;
+        font-size: 1vw;
+        line-height: 1.5vw;
+        color: #968978;
+    }
+
+    .boxText3 {
+        text-decoration: none;
+        font-family: 'HakgyoansimBareonbatangB';
+        text-align: center;
+        margin-top: 2.5vw;
+        font-size: 1.2vw;
+        color: #fff6ea;
+        text-decoration-color: #fff6ea;
+    }
+
+    .box:hover {
+        background-color: #2d3c49;
+        color: #fff7ea;
+    }
+}
+
+.section4 {
+    display: flex;
+    flex-direction: row;
+
+    width: 100vw;
+    height: 100%;
+
+    background-color: #fff6ea;
+
+    .imageBox {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 45vw;
+            height: 100vh;
+        }
+
+        .text1,
+        .text2,
+        .text3 {
+            width: 40vw;
+            position: absolute;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        .text1 {
+            top: 47%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #FFFFFF;
+            font-size: 1.5vw;
+            font-family: "HakgyoansimBareonbatangB";
+        }
+
+        .text2 {
+            top: 53%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #d1af73;
+            font-size: 2.5vw;
+            font-family: "GmarketSansMedium";
+        }
+
+        .text3 {
+            top: 62%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #FFFFFF;
+            font-size: 1.2vw;
+            font-family: "GmarketSansMedium";
+        }
+    }
+
+    .textBox {
+        margin-top: 8vw;
+        margin-left: 4vw;
+
+        width: 45vw;
+
+        .text1 {
+            font-family: "HakgyoansimBareonbatangB";
+            font-size: 2.2vw;
+            color: #c98f25;
+        }
+
+        .text2 {
+            position: relative;
+            top: 2vw;
+            left: 90%;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            font-family: "HakgyoansimBareonbatangB";
+            font-size: 1.5vw;
+            color: #d1af73;
+        }
+    }
+}
+
+.section5 {
+    width: 100%;
+    height: 100%;
+}
+
+//모바일 메인 스타일
+
+.mobileMain {
+
+    .imageContainer {
+        
+        position: relative; /* 상대적 위치 지정 */
+        width: 100%;
+        height: 50%;
+        overflow: hidden; /* 이미지를 잘라내지 않도록 */
+
+        .mainImage {
+            width: 100vw;
+            height: auto;
+            object-fit: cover; /* 이미지 비율 유지하면서 가득 채우기 */
+            filter: brightness(0.8) contrast(1.2); /* 이미지에 어두운 필터 적용, 대비 강조 */
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%; /* 오버레이 크기 맞춤 */
+            pointer-events: none; /* 클릭 방지 */
+        }
+
+        .mainImageTextBox2 {
+            display: flex;
+            flex-direction: column; /* 세로 방향으로 배열 */
+            justify-content: center; /* 세로로 중앙 정렬 */
+            align-items: center; /* 가로로 중앙 정렬 */
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* 정확히 중앙에 맞추기 위한 이동 */
+            color: #FFFFFF;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .mainImageTitle {
+            font-family: 'Bebas Neue', sans-serif; /* 고급스러운 느낌의 서체 */
+            font-weight: 500;
+            font-size: 4.5vw; /* 폰트 크기 */
+            margin: 1vw 0; /* 타이틀 위아래 여백 */
+            letter-spacing: 0.1rem; /* 글자 간격 */
+            text-transform: uppercase; /* 대문자로 변환 */
+            opacity: 0;
+            animation: fadeIn 1s ease forwards, slideIn 1s ease forwards, glowText 2s ease-in-out infinite alternate;
+            animation-delay: 0.3s;
+        }
+        
+        .mainImageTextSub {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 3vw; /* 부제 크기 */
+            margin-bottom: 1vw; /* 부제와 제목 간 여백 */
+            letter-spacing: 0.1vw;
+            opacity: 0.9;
+            animation: fadeIn 1s ease forwards, slideIn 1s ease forwards, bounceIn 1.5s ease forwards;
+            animation-delay: 0.6s;
+        }
+        
+        .mainImageText {
+            font-family: 'Bebas Neue', sans-serif;
+            font-weight: 700;
+            font-size: 10vw; /* 모바일에 맞게 크기 크게 설정 */
+            letter-spacing: 0.1vw;
+            text-transform: uppercase;
+            opacity: 0;
+            animation: fadeIn 1s ease forwards, slideIn 1s ease forwards, zoomIn 1.5s ease forwards;
+            animation-delay: 0.9s;
+        }
+        
+        .mainImageLine {
+            margin: 2vw 0;
+            width: 80%;
+            height: 2px;
+            background-color: #ffe2b0;
+            opacity: 0.7;
+            box-shadow: 0 0 10px rgba(255, 226, 176, 0.5); /* 라인에 부드러운 그림자 효과 */
+            animation: lineGlow 2s ease-in-out infinite alternate;
+        }
+        
+        /* 애니메이션 정의 */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideIn {
+            0% {
+                transform: translateY(30px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        
+
+        
+        @keyframes bounceIn {
+            0% {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            60% {
+                transform: translateY(-10px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0.7);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes lineGlow {
+            0% {
+                opacity: 0.7;
+                transform: scaleX(1);
+            }
+            50% {
+                opacity: 1;
+                transform: scaleX(1.1);
+            }
+            100% {
+                opacity: 0.7;
+                transform: scaleX(1);
+            }
+        }
+    }          
+
+
+
+
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        padding: 10vw 0 0 7vw;
+
+        font-family: 'HakgyoansimBareonbatangB';
+        font-weight: 700;
+
+        background-color: #fffbf5;
+
+        .text1 {
+            font-size: 8vw;
+            color: #c98f25;
+        }
+
+        .text2 {
+            margin-top: 8vw;
+            font-size: 4vw;
+            color: #461900;
+        }
+
+        .text3 {
+            margin-top: 8vw;
+            font-size: 2.5vw;
+            font-family: 'HakgyoansimBareonbatangA';
+            font-weight: 300;
+            line-height: 4vw;
+            color: #928677;
+        }
+
+        .text4 {
+            margin: 15vw 0 17vw 3vw;
+            font-size: 3vw;
+            color: #241400;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+
+    }
+
+    .container2 {
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 34vw;
+    
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            gap: 5vw;
+
+            margin: 30vw 0;
+
+
+            .btn {
+                margin-top: 3vw;
+                padding: 2.2vw 3.5vw;
+                background-color: #6e5e55;
+                border-radius: 10vw;
+                color: #FFFFFF;
+                font-size: 3.2vw;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .container3 {
+        position: relative;
+        padding-top: 12vw;
+        padding-left: 5.5vw;
+
+        height: 80vw;
+        background: linear-gradient(to bottom, #fff6ea 85%, #c4825f 15%);
+
+        .textbox {
+
+            font-weight: 700;
+            font-size: 3.5vw;
+
+            .text1,
+            .text2,
+            .text3,
+            .text4,
+            .text5 {
+                opacity: 0;
+                animation: fadeUp 1.8s ease forwards;
+            }
+
+            .text1 {
+                font-size: 4vw;
+                animation-delay: 0.3s;
+                color: #c98f25;
+            }
+
+            .text2 {
+                margin-top: 2vw;
+                font-size: 5vw;
+                line-height: 7vw;
+                
+                animation-delay: 0.6s;
+                color: #461900;
+            }
+
+            .text3 {
+                margin-top: 5.8vw;
+                font-size: 3.5vw;
+                animation-delay: 0.9s;
+                color: #a2978a;
+            }
+
+            .text4 {
+                margin-top: 2vw;
+                font-size: 3vw;
+                line-height: 3.5vw;
+                animation-delay: 1.2s;
+                color: #381400;
+            }
+
+            .text5 {
+                margin: 5vw 0;
+                font-size: 2.2vw;
+                line-height: 3.2vw;
+                animation-delay: 1.5s;
+                color: #5e5e5e;
+            }
+
+            span {
+                font-weight: 900;
+            }
+        }
+
+        img {
+            position: absolute;
+            margin-top: 5vw;
+            bottom: 1vw;
+            right: 6vw;
+            
+            width: 40vw;
+            height: 35vw; /* 정사각형 유지 */
+            border-radius: 90%; /* 동그랗게 */
+            object-fit: cover; /* 이미지가 찌그러지지 않도록 */
+        }
+        
+    }
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 10vw; /* 모바일에서는 이미지 크기를 50%로 조정 */
+    }
+}
+
+
+.container4 {
+    width: 100%;
+    height: 100%;
+    background-color: #fff6ea;
+
+    .text1 {
+        padding: 8vw 0 0 6vw;
+        font-family: "HakgyoansimBareonbatangB";
+        font-size: 5vw;
+        color: #c98f25;
+    }
+
+    .text2 {
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        font-family: "HakgyoansimBareonbatangB";
+        font-size: 1.5vw;
+        color: #d1af73;
+
+        div {
+            @media (max-width: 900px) {
+                padding: 6vw 4vw 7vw 0;
+                text-align: right;
+                font-size: 4vw;
+            }
+        }
+    }
+}
+
+.container5 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 100vw;
+        height: 90vw;
+    }
+
+    .text1,
+    .text2,
+    .text3 {
+        width: 100%;
+        position: absolute;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    .text1 {
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #FFFFFF;
+        font-size: 3vw;
+        font-family: "HakgyoansimBareonbatangB";
+    }
+
+    .text2 {
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #d1af73;
+        font-size: 5vw;
+        font-family: "GmarketSansMedium";
+    }
+
+    .text3 {
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #FFFFFF;
+        font-size: 3.5vw;
+        font-family: "GmarketSansMedium";
+    }
+}
+
+.container7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+
+    background-color: #fff8ee;
+
+    .textBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        margin: 4vw 0 0 2.5vw;
+        width: 100%;
+
+        .title {
+            color: #2d3c49;
+            font-family: 'HakgyoansimBareonbatangB';
+            font-size: 4vw;
+            font-weight: 400;
+            line-height: 6vw;
+
+            span:first-of-type {
+                font-family: 'HakgyoansimBareonbatangB';
+                color: #b88c52;
+                font-weight: 800;
+                font-size: 5vw;
+            }
+        }
+
+        .subTitle {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1vw;
+            margin-top: 2vw;
+            width: 100%;
+
+            .textLine {
+                border: 3px solid #2d3c49;
+                width: 0;
+                height: 7vw;
+            }
+
+            .subText {
+                font-family: 'HakgyoansimBareonbatangB';
+                color: #0f0f1d;
+                margin: 0 0 0 0;
+                font-size: 3vw;
+                line-height: 4vw;
+            }
+
+        }
+    }
+
+    img {
+        margin: 2vw 0 0 5vw;
+        width: 90vw;
+
+    }
+}
+.section8 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #fffbf5;
+
+    .textBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        margin: 12vw 0 0 6vw;
+        width: 80%;
+
+        .title {
+            color: #2d3c49;
+            font-family: 'NanumHumanTTFBold';  
+            font-size: 2vw;
+            font-weight: 600;
+            line-height: 3.5vw;
+
+            span:first-of-type {
+                color: #b88c52;
+                font-weight: 800;
+                font-size: 2.5vw;
+            }
+        }
+
+        .subTitle {
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1vw;
+            margin-top: 2vw;
+            width: 100%;
+
+            .textLine {
+                border: 4px solid #2d3c49;
+                width: 0;
+                height: 3.5vw;
+            }
+
+            .subText {
+                color: #2d3c49;
+                font-family: 'NanumHumanTTFBold';
+                font-size: 1.3vw;
+                line-height: 2vw;
+            }
+
+        }
+    }
+
+    img {
+        margin: 8vw 5VW 2vw 0;
+        width: 40vw;
+
+    }
+}
+
+.section9 {
+    gap: 2vw;
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* 이미지를 가로 방향으로 중앙 배치 */
+    align-items: flex-start; /* 이미지의 세로 정렬 (flex-start는 상단 정렬) */
+    width: 100%;
+    height: 50%;
+    background-color: #fff6ea;
+
+    .textBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        margin: 12vw 0 0 2vw;
+        width: 35%;
+        height: auto;
+
+        .title {
+            color: #2d3c49;
+            font-family: 'NanumHumanTTFBold';
+            font-size: 2vw;
+            font-weight: 600;
+            line-height: 2.5vw;
+            margin: 2vw 0 0 0;
+
+            span:first-of-type {
+                color: #b88c52;
+                font-weight: 800;
+                font-size: 2vw;
+            }
+        }
+
+        .subTitle {
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1vw;
+            margin-top: 2vw;
+            width: 100%;
+
+            .textLine {
+                border: 4px solid #2d3c49;
+                width: 0;
+                height: 3.5vw;
+            }
+
+            .subText {
+                font-family: 'NanumHumanTTFBold';
+                font-size: 1.3vw;
+                line-height: 2vw;
+            }
+
+        }
+    }
+
+    img {
+        margin: 8vw 0 1vw 0; /* 기본 마진 설정 */
+        width: 50%; /* 이미지를 부모 요소의 가로 너비에 맞게 조정 */
+        height: auto; /* 세로 비율에 맞춰 자동으로 크기 조정 */
+        object-fit: cover; /* 이미지를 자르지 않고 비율을 맞추기 위해서 사용 */
+    }
+    
+    @media (max-width: 768px) {
+        img {
+            margin: 1vw 0 2vw 0; /* 모바일 화면에서 여백을 다르게 설정 */
+            width: 100%; /* 모바일에서도 가로 크기를 100%로 설정 */
+            height: auto; /* 세로 비율에 맞춰 자동으로 크기 조정 */
+
+        }
+    }
+}
+
+
+/* MainMobile.module.scss */
+
+/* --- 모바일 전용 스타일 --- */
+
+.mobileMain {
+    font-family: 'NanumHumanTTFBold';
+  }
+  
+  
+  /* --- 모바일 전용 스타일 --- */
+
+.mobileMain {
+    font-family: 'NanumHumanTTFBold';
+  }
+  
+
+  /* 관심고객 등록 섹션 (모바일) */
+  .containerRegistration {
+    background-color: #f1f1f1;
+    padding: 30px 20px;
+    text-align: center;
+
+    margin: 20px 0;
+  }
+  .registrationHeader {
+    font-family: 'SUIT-Regular';
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .registrationDescription {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  .registrationForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .registrationForm input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .registrationForm button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .registrationForm button:hover {
+    background-color: #333;
+  }
+  
+  /* 날짜 선택 입력란 관련 스타일 */
+  .dateInputContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .dateInputContainer label {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .dateInputContainer input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+
+
+
+/* 좌우 2단 레이아웃 컨테이너 */
+.registrationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+  max-width: 100%;
+  height: 100vh;
+  margin: 2vw 10vw 0 20vw;
+  padding: 1px 0;
+}
+
+/* 왼쪽 안내 문구 영역 */
+.registrationInfo {
+  flex: 1;
+  text-align: left;
+  margin-left: -10vw; /* 값은 디자인에 맞게 조절 */
+}
+
+/* 개별 텍스트 스타일 */
+
+/* text1: 제목 및 부제 (예시: 크고 진한 텍스트) */
+.text1 {
+  font-family: 'NanumHumanTTFBold';
+  font-size: 1.8rem;    /* 원하는 크기로 조정 */
+  color: #373535;       /* 원하는 색상으로 조절 */
+  margin-bottom: 20px;
+}
+
+/* text2: 상담 안내 문구 */
+.text2 {
+  font-size: 1.2rem;
+  color: #484747;
+  margin-bottom: 20px;
+}
+
+/* text3: '분양문의' */
+.text3 {
+  font-family: 'NanumHumanTTFBold';
+  font-size: 1.5rem;
+  color: #2d3c49;
+  font-weight: bold;
+}
+
+/* text4: 전화번호 */
+.text4 {
+  font-size: 1.5rem;
+  color: #2d3c49;       /* 예: 붉은색 */
+  font-weight: bold;
+}
+
+/* 오른쪽 등록 폼 영역 */
+.registrationSection {
+  flex: 1;
+  background-color: #f8f8f8;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.registrationHeader {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.registrationDescription {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.registrationForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.registrationForm input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.registrationForm button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #2d3c49;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.registrationForm button:hover {
+  background-color: #333;
+}
+
+/* 날짜 선택 입력란 관련 스타일 (PC 버전) */
+.dateInputContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.dateInputContainer label {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  text-align: center;  /* 가운데 정렬 */
+  color: #373535;
+}
+
+.dateInputContainer input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+  
+  

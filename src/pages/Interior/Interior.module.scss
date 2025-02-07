@@ -1,0 +1,149 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bener{
+    width: 100vw;
+    height: auto;
+}
+
+.image {
+    width: 60rem;
+    height: auto;
+
+    @media (max-width: 900px) {
+        width: 100vw;
+        height: auto;
+    }
+}
+
+.textBox{
+    margin: 3vw 0 0 0;
+    text-align: center;
+    font-size: 2.5vw;
+
+    div:nth-of-type(1) {
+        font-weight: 200;
+    }
+    div:nth-of-type(2) {
+        margin-top: 0.5vw;
+        font-weight: 800;
+        color: #890d18;
+    }
+}
+
+
+.commonBox {
+    margin: 2vw 0;
+    width: 80%;
+    background-color: #f8f4f0;
+    border: 1px solid #e9e2da;
+
+    @media (max-width: 900px) {
+        width: 90%;
+    }
+
+    .notice {
+        padding: 0 1vw;
+        line-height: 1.1vw;
+        font-size: 1vw;
+        color: #ada8a2;
+
+        @media (max-width: 900px) {
+            padding: 0  3vw;
+            font-size: 2.5vw;
+            line-height: 3vw;
+            text-indent: -2vw;
+        }
+    }
+
+    .notice:nth-of-type(1) {
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+
+    .notice:nth-of-type(2),
+    .notice:nth-of-type(3),
+    .notice:nth-of-type(4),
+    .notice:nth-of-type(5) {
+        padding-bottom: 1vw;
+    }
+
+    .notice:nth-of-type(6) {
+        padding-bottom: 1vw;
+    }
+}
+
+.image2 {
+    margin: 4vw 0 0 0;
+    width: 60%;
+    height: auto;
+    opacity: 0;  // 처음에는 안 보이게 설정
+    transform: scale(1.05);  // 처음에 살짝 커진 상태
+    transition: opacity 1.5s ease, transform 1.5s ease;  // 애니메이션 효과
+
+    &.showImage2 {
+        opacity: 1;  // 애니메이션이 완료되면 이미지가 보이게
+        transform: scale(1);  // 원래 크기로 돌아옴
+    }
+
+    @media (max-width: 900px) {
+        width: 90%;
+    }
+}
+
+.commonBox2 {
+    margin: 2vw 0;
+    width: 60%;
+    background-color: #f8f4f0;
+    border: 1px solid #e9e2da;
+
+    @media (max-width: 900px) {
+        width: 90%;
+    }
+
+    .notice {
+        padding: 0 1vw;
+        line-height: 1.1vw;
+        font-size: 1vw;
+        color: #ada8a2;
+
+        @media (max-width: 900px) {
+            padding: 0  3vw;
+            font-size: 2.5vw;
+            line-height: 3vw;
+            text-indent: -2vw;
+        }
+    }
+
+    .notice:nth-of-type(1) {
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+
+    .notice:nth-of-type(2),
+    .notice:nth-of-type(3),
+    .notice:nth-of-type(4),
+    .notice:nth-of-type(5) {
+        padding-bottom: 1vw;
+    }
+
+    .notice:nth-of-type(6) {
+        padding-bottom: 1vw;
+    }
+}
+
+/* screenReaderOnly 스타일을 추가하여 시각적으로 숨기지만, 검색 엔진에 SEO를 제공 */
+.screenReaderOnly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}

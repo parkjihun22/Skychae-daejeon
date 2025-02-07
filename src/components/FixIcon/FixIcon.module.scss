@@ -1,0 +1,116 @@
+.fixed {
+    position: fixed;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.youtube {
+    bottom: 10vw;
+    right: 1.5vw;
+
+    img {
+        width: 3vw;
+    }
+}
+
+.container {
+    bottom: 6%;
+    right: 3%;
+
+    img {
+        animation: spin 8s linear infinite;
+    }
+
+    .circlebox {
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 2vw 0;
+        width: 7.5vw;
+        background-color: #2d3c49;
+        border-radius: 50%;
+
+        text-align: center;
+        text-decoration: none;
+        line-height: 1.8vw;
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: 1.3vw;
+        color: #FFFFFF;
+
+    }
+
+    &:hover {
+        padding: 1vw;
+        background-color: #2d3c49;
+        border-radius: 50%;
+        transform: scale(1.1);
+        /* 컨테이너가 커지는 효과 */
+        transition: transform 0.4s ease;
+        /* 부드러운 전환 */
+    }
+
+    cursor: pointer;
+    z-index: 50;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.buttomBtnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    color: #FFFFFF;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.3rem;
+
+    z-index: 200;
+}
+
+.buttomBtnContainer a {
+    display: flex;
+    align-items: center;
+    /* 아이콘과 텍스트를 수직 중앙 정렬 */
+    justify-content: center;
+    /* 버튼 내부 콘텐츠 중앙 정렬 */
+    text-decoration: none;
+    text-align: center;
+    gap: 1rem;
+    color: inherit;
+    padding: 0.6rem 0;
+    width: 50vw;
+    /* 모바일에서 버튼의 너비를 조절 */
+
+    position: relative; /* 추가 */
+    z-index: 1000; /* 추가 */
+}
+
+.buttomBtnContainer .btn1 {
+    background-color: #2d3c49;
+}
+
+.buttomBtnContainer .btn2 {
+    background-color: #ffffff;
+    border: none;
+    color: #2d3c49;
+}

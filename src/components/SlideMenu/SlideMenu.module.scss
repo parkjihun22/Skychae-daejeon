@@ -1,0 +1,81 @@
+.container {
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    width: 60%; // 모바일 화면의 50%를 차지
+    position: fixed;
+    top: 15vw; // 상단 여백 유지
+    left: 0;
+    height: calc(100vh - 12vw); // 화면 높이에서 상단 여백을 뺀 만큼
+    background-color: white;
+    overflow-y: auto; // 내용이 많을 경우 스크롤 가능하게
+    z-index: 1000; // 다른 요소들 위에 표시
+}
+
+.menuItem {
+    border-bottom: 2px solid #cbcbcb;
+}
+
+.menuBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #e0e0e0;
+    }
+}
+
+.menuTitle {
+    font-weight: 600;
+}
+
+.linkItem {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+}
+
+.subMenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #f9f9f9;
+}
+
+.subMenu.show {
+    max-height: 500px; // 충분히 큰 값으로 설정
+}
+
+.subMenuBtn {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #2d3c49;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #e0e0e0;
+    }
+}
+
+// 새로 추가된 스타일
+.mobileReservation {
+    background-color: #FFFFFF; // 배경색 변경 (원하는 색상으로 조정)
+    border-bottom: 2px solid #cbcbcb;
+    
+    .linkItem {
+        color: #2d3c49; // 글자색 변경 (원하는 색상으로 조정)
+        font-weight: bold; // 글자 굵기 변경
+        font-size: 0.9rem; // 글자 크기 조정
+    }
+
+    &:hover {
+        background-color: #e0e0e0; // 호버 시 배경색 변경
+    }
+}

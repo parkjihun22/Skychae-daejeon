@@ -1,0 +1,304 @@
+/* Header 전체 스타일 */
+.containerFirst,
+.container {
+    font-family: 'NanumHumanTTFBold';
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5rem; // 항목 간의 간격을 줄임
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 6vw;
+    z-index: 100;
+
+    text-decoration: none;
+
+    &.containerFirst {
+        background-color: transparent;
+        border-bottom: 1px solid #FFFFFF;
+    }
+
+    &.container {
+        background-color: #FFFFFF;
+        border-bottom: 1px solid #2e1705;
+    }
+
+    img {
+        position: absolute;
+        top: 20%;
+        left: 2%;
+        transform: translateY(-50%, -50%);
+        width: 4vw;
+        height: auto;
+
+        @media (max-width: 900px) {
+            width: 5rem;
+        }
+    }
+
+    .title,
+    .scrolledTitle {
+        font-family: 'NanumHumanTTFBold';
+        font-weight: 600;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .title {
+        color: #ffffff00;
+    }
+
+    .scrolledTitle {
+        color: #053b0200;
+    }
+
+    .itemBox {
+        
+        display: flex;
+        flex-direction: row;
+        gap: 0.9rem; // 항목 간의 간격을 줄임
+        margin-right: 13.5vw;
+
+        .linkItem,
+        .scrolledLinkItem {
+            
+            padding: 0.5vw 0; // 패딩 조정
+            font-size: 1vw;
+            border-bottom: 3px solid rgba(0, 0, 0, 0); // 초기 border-bottom 투명
+            text-decoration: none; // 기본 밑줄 취소
+            color: #2d3c49; // 기본 글자색 설정 
+
+            &:hover {
+                border-bottom: px solid #2d3c49; // hover 시 하단 border만 나타남
+                color: #2d3c49; // hover 시 글자색 변경
+                font-size: 1vw; // 크기 유지
+                font-weight: normal; // 두께를 일반으로 유지
+            }
+        }
+
+        .linkItem {
+            color: #FFFFFF; // 기본 글자색 흰색
+        }
+
+        .scrolledLinkItem {
+            
+            color: #2d3c49; // 기본 글자색 흰색
+            font-weight: bold;
+        }
+
+        .item,
+        .scrolledItem {
+        
+            padding: 0.5vw 0; // 패딩 조정
+            font-size: 1vw;
+            border-bottom: 3px solid rgba(0, 0, 0, 0);
+            text-decoration: none;
+
+            &:hover {
+                
+                border-bottom: 5px solid #2d3c49;
+            }
+        }
+
+        .item {
+            color: #FFFFFF;
+        }
+
+        .scrolledItem {
+            font-family: 'SUIT-Regular';
+        font-weight: 500;
+            color: #2d3c49;
+
+        }
+    }
+
+    .phoneNumber,
+    .scrolledPhoneNumber {
+        font-family: 'NanumHumanTTFBold';
+        font-weight: 600;
+        position: absolute;
+        top: 50%;
+        right: 3%;
+        transform: translate(0, -50%);
+        text-align: center;
+        font-size: 1.5vw;
+        text-decoration: none;
+    }
+
+    .phoneNumber {
+        color: #FFFFFF;
+    }
+
+    .scrolledPhoneNumber {
+        font-family: 'NanumHumanTTFBold';
+        color: #2d3c49;
+        font-weight: bold;
+    }
+}
+
+/* 하위메뉴 스타일 */
+.secondContainer {
+
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 18vw;
+    z-index: 100;
+
+    text-decoration: none;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #2e1705;
+
+    img {
+        position: absolute;
+        top: 7%;
+        left: 2%;
+        width: 4vw;
+        height: auto;
+
+        @media (max-width: 900px) {
+            width: 3rem;
+        }
+    }
+
+    .title,
+    .scrolledTitle {
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .title {
+        color: #ffffff00;
+    }
+
+    .scrolledTitle {
+        color: #053b0200;
+    }
+
+    .itemBox {
+        font-family: 'NanumHumanTTFBold';
+        position: absolute;
+        top: 10%;
+        display: flex;
+        flex-direction: row;
+        gap: 0.1vw; // 항목 간의 간격을 줄임x
+        margin-right: 13vw;
+
+        
+        .linkItem {
+            
+            padding: 0.5vw 0;
+            margin-right: 0.5vw;
+            font-size: 1vw;
+            border-bottom: 10px solid rgba(0, 0, 0, 0); // 초기 border-bottom 투명
+            text-decoration: none; // 기본 밑줄 취소
+            color: #2d3c49; // 기본 글자색 설정
+            font-weight: 500;
+
+        }
+
+        .detailItemBox {
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            .item {
+                margin-bottom: 0.4vw; // 마진 줄임
+                padding: 0.5vw 0; // 패딩 조정
+                width: 5vw;
+                text-align: center;
+                font-size: 1vw;
+                font-weight: 300;
+                border-bottom: 3px solid rgba(0, 0, 0, 0);
+                text-decoration: none;
+                color: #2d3c49;
+
+                &:hover {
+                    font-family: 'NanumHumanTTFBold';
+        font-weight: 800;
+                    border-bottom: 3px solid #d59c38;
+                }
+            }
+
+            .secondItemBox {
+                display: flex;
+                flex-direction: column;
+
+                .subitem {
+                    font-family: 'SUIT-Regular';
+                    font-weight: 600;
+                    padding: 0.3vw 0.5vw;
+                    border-radius: 0.2vw;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 0.8vw;
+                    color: #000000;
+
+                    &:hover {
+                        color: #FFFFFF;
+                        background-color: #d59c38;
+                    }
+                }
+            }
+        }
+    }
+
+    .phoneNumber {
+        font-family: 'SUIT-Regular';
+        font-weight: 600;
+        position: absolute;
+        top: 12%;
+        right: 3%;
+        text-align: center;
+        font-size: 1.5vw;
+        font-weight: bold;
+        text-decoration: none;
+        color: #2d3c49;
+    }
+}
+
+// 모바일 header
+.mobileHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    padding: 5vw 0 4vw 0;
+
+    width: 99.9%;
+    height: 6vw;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #2d3c49;
+    z-index: 100;
+
+    text-decoration: none;
+
+    .logo { 
+        margin-top: 1vw;
+        width: 8vw;
+    }
+
+    .icon {
+        margin: 20vw 3.5vw;
+    }
+}

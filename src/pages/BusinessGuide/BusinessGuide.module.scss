@@ -1,0 +1,279 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bener {
+    width: 100vw;
+    height: auto;
+}
+
+.img1 {
+    margin-top: 1vw;
+    margin-bottom: 4vw;
+    width: 100%;
+    @media (max-width: 900px) {
+        width: 100%;
+    }
+}
+
+.img3 {
+    margin-top: 4vw;
+    width: 80%;
+    @media (max-width: 900px) {
+        width: 90%;
+    }
+}
+
+.textBox {
+    margin: 4vw 0 0 0;
+    text-align: center;
+    font-size: 2.5vw;
+
+    div:nth-of-type(1) {
+        font-weight: 200;
+    }
+
+    div:nth-of-type(2) {
+        margin-top: 0.5vw;
+        font-weight: 800;
+        color: #2d3c49;
+    }
+}
+
+.tableContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1vw;
+    width: 81%;
+    
+    @media (max-width: 900px) {
+        width: 90%;
+    }
+
+    .tableImg {
+        margin-right: 1vw; /* 표와의 간격을 위해 오른쪽 여백 추가 */
+        
+        @media (max-width: 900px) {
+            margin-right: 1vw;
+            width: 90%;
+        }
+    }
+
+    .projectTable {
+        margin-right: 0.5vw;
+        width: 100%;
+        border-collapse: collapse;
+
+        .label {
+            width: 8vw;
+            background-color: #fffbf4;
+            text-align: center;
+            font-size: 0.9vw;
+            color: #ad8844;
+
+            @media (max-width: 900px) {
+                width: 15vw;
+                padding: 1.5vw 0;
+                font-size: 3vw;
+            }
+        }
+
+        td {
+            border: 1px solid #d3c7bb;
+            font-size: 0.8vw;
+
+            @media (max-width: 900px) {
+                font-size: 2.5vw;
+                line-height: 4vw;
+            }
+        }
+
+        .contents {
+            padding: 0 2vw 0 1vw;
+
+            @media (max-width: 900px) {
+                padding: 0 2vw 0 2vw;
+            }
+        }
+    }
+}
+
+.commonBox {
+    margin: 2vw 0;
+    width: 80%;
+    background-color: #f8f4f0;
+    border: 1px solid #e9e2da;
+
+    @media (max-width: 900px) {
+        width: 90%;
+    }
+
+    .notice {
+        padding: 0 1vw;
+        line-height: 1.1vw;
+        font-size: 1vw;
+        color: #ada8a2;
+
+        @media (max-width: 900px) {
+            padding: 0 3vw;
+            font-size: 2.5vw;
+            line-height: 3vw;
+            text-indent: -2vw;
+        }
+    }
+
+    .notice:nth-of-type(1) {
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+
+    .notice:nth-of-type(2),
+    .notice:nth-of-type(3),
+    .notice:nth-of-type(4),
+    .notice:nth-of-type(5) {
+        padding-bottom: 1vw;
+    }
+
+    .notice:nth-of-type(6) {
+        padding-bottom: 1vw;
+    }
+}
+
+.optionSelector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* 작은 화면에서 버튼이 여러 줄로 나뉘도록 */
+    gap: 1vw;
+    margin: 2vw auto;
+    background-color: #f8f9fa; /* 더 밝고 현대적인 배경색 */
+    padding: 1vw;
+    border-radius: 1px; /* 더 부드러운 모서리 */
+    width: 60%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+    
+    .button {
+      padding: 10px 24px;
+      font-size: 1vw;
+      font-weight: 600;
+      color: #890d18;
+      background-color: #ffffff;
+      border: 2px solid #890d18;
+      border-radius: 1px; /* 더 둥근 버튼 */
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      text-align: center;
+      letter-spacing: 0.5px; /* 글자 간격 조정 */
+    
+      &:hover {
+        background-color: #890d18;
+        color: #fff;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(9, 80, 82, 0.2); /* 호버 시 그림자 효과 */
+      }
+    
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(9, 80, 82, 0.3); /* 포커스 시 아웃라인 대신 그림자 */
+      }
+    
+      &.active {
+        background-color: #890d18;
+        color: #fff;
+        border-color: #890d18;
+      }
+    }
+  
+    @media (max-width: 900px) {
+      width: 90%;
+      padding: 3vw;
+      
+      .button {
+        font-size: 3vw;
+        padding: 10px 18px;
+        margin-bottom: 1vw; /* 버튼 사이 세로 간격 추가 */
+      }
+    }
+  }
+  
+
+  /* 이미지 페이드 인 애니메이션 */
+.image4 {
+    margin: 4vw 0;
+    width: 60%;
+    height: auto;
+    opacity: 0;  /* 처음에 이미지 숨기기 */
+    transform: translateY(20px); /* 이미지 아래 위치 설정 */
+    animation: fadeIn 1s forwards; /* 페이드 인 애니메이션 추가 */
+    transition: transform 1s, opacity 1s; 
+}
+
+/* 텍스트 박스 애니메이션 */
+.textBox {
+    margin: 3vw 0 0 0;
+    text-align: center;
+    font-size: 2.5vw;
+    opacity: 0; /* 처음에는 텍스트 숨기기 */
+    animation: fadeIn 1s 0.2s forwards; /* 텍스트 박스에 지연된 페이드 인 애니메이션 */
+}
+
+.textBox div:nth-of-type(1) {
+    font-size: 1.8vw;
+    font-weight: 200;
+}
+
+.textBox div:nth-of-type(2) {
+    font-size: 2.3vw;
+    margin-top: 0.5vw;
+    font-weight: 800;
+    color: #2d3c49;
+}
+
+/* 모바일 스타일 */
+@media (max-width: 768px) {
+    .image {
+        width: 70%;
+        transform: translateY(20px);
+    }
+    .textBox {
+        font-size: 10vw;
+    }
+}
+
+/* 비디오 컨테이너 스타일 */
+.videoContainer {
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+}
+
+/* 모바일 비디오 컨테이너 스타일 */
+@media (max-width: 768px) {
+    .videoContainer {
+        margin-top: 3vw;
+        margin-bottom: 5vw;
+    }
+}
+
+/* 페이드 인 애니메이션 정의 */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* screenReaderOnly 스타일을 추가하여 시각적으로 숨기지만, 검색 엔진에 SEO를 제공 */
+.screenReaderOnly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}

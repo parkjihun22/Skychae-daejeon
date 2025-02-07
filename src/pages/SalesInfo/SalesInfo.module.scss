@@ -1,0 +1,257 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bener{
+    width: 100vw;
+    height: auto;
+}
+
+.image {
+    width: 60rem;
+    height: auto;
+
+    @media (max-width: 900px) {
+        width: 100vw;
+    }
+}
+
+.image1 {
+    margin: 4vw 0 0 0;
+    width: 80%;
+    height: auto;
+
+    @media (max-width: 900px) {
+        width: 90%;
+    }
+}
+
+.image2 {
+    margin: 4vw 0 0 0;
+    width: 60%;
+    height: auto;
+    opacity: 0;  // 처음에는 안 보이게 설정
+    transform: scale(1.05);  // 처음에 살짝 커진 상태
+    transition: opacity 1.5s ease, transform 1.5s ease;  // 애니메이션 효과
+
+    &.showImage2 {
+        opacity: 1;  // 애니메이션이 완료되면 이미지가 보이게
+        transform: scale(1);  // 원래 크기로 돌아옴
+    }
+
+    @media (max-width: 900px) {
+        width: 90%;
+    }
+}
+
+.textBox{
+    font-family: "GmarketSansMedium";
+    margin: 3vw 0 0 0;
+    text-align: center;
+    font-size: 2.5vw;
+
+    div:nth-of-type(1) {
+        font-weight: 200;
+    }
+    div:nth-of-type(2) {
+        margin-top: 0.5vw;
+        font-weight: 800;
+        color: #2d3c49;
+    }
+    div:nth-of-type(3) {
+        margin-top: 0.5vw;
+        font-weight: 200;
+    }
+}
+
+.commonBox {
+    margin: 2vw 0;
+    width: 80%;
+    background-color: #f8f4f0;
+    border: 1px solid #e9e2da;
+
+    @media (max-width: 900px) {
+        width: 90%;
+    }
+
+    .notice {
+        padding: 0 1vw;
+        line-height: 1.1vw;
+        font-size: 1vw;
+        color: #ada8a2;
+
+        @media (max-width: 900px) {
+            padding: 0  3vw;
+            font-size: 2.5vw;
+            line-height: 3vw;
+            text-indent: -2vw;
+        }
+    }
+
+    .notice:nth-of-type(1) {
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+
+    .notice:nth-of-type(2),
+    .notice:nth-of-type(3),
+    .notice:nth-of-type(4),
+    .notice:nth-of-type(5) {
+        padding-bottom: 1vw;
+    }
+
+    .notice:nth-of-type(6) {
+        padding-bottom: 1vw;
+    }
+}
+
+.commonBox2 {
+    margin: 2vw 0;
+    width: 60%;
+    background-color: #f8f4f0;
+    border: 1px solid #e9e2da;
+
+    @media (max-width: 900px) {
+        width: 90%;
+    }
+
+    .notice {
+        padding: 0 1vw;
+        line-height: 1.1vw;
+        font-size: 1vw;
+        color: #ada8a2;
+
+        @media (max-width: 900px) {
+            padding: 0  3vw;
+            font-size: 2.5vw;
+            line-height: 3vw;
+            text-indent: -2vw;
+        }
+    }
+
+    .notice:nth-of-type(1) {
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+
+    .notice:nth-of-type(2),
+    .notice:nth-of-type(3),
+    .notice:nth-of-type(4),
+    .notice:nth-of-type(5) {
+        padding-bottom: 1vw;
+    }
+
+    .notice:nth-of-type(6) {
+        padding-bottom: 1vw;
+    }
+}
+
+
+/* PDF 버튼 스타일 */
+/* PDF 버튼 스타일 */
+.pdfButton {
+    margin-top: 3vw; /* PC에서 적용되는 마진 */
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background-color: #c70b0b;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 7px 15px;
+    font-size: 1.3vw; /* 버튼의 폰트 크기를 직접 설정 */
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: auto;  /* 수평 중앙 정렬 */
+    margin-right: auto; /* 수평 중앙 정렬 */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 23vw;
+    text-align: center; /* 텍스트를 버튼 내부에서 중앙 정렬 */
+}
+
+.pdfButton:hover {
+    background-color: rgb(27, 39, 49); /* 호버 시 색상 변화 */
+    transform: translateY(-3px);
+}
+
+.pdfButton:active {
+    transform: translateY(1px);
+}
+
+/* PDF 아이콘 */
+.pdfIcon {
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+}
+
+/* 버튼 내부 텍스트 - span 스타일 제거 */
+.pdfButton span {
+    font-size: inherit; /* 부모 버튼의 폰트 크기를 상속 */
+    font-weight: inherit;
+    color: inherit;
+}
+
+/* 모바일 버전 스타일 */
+@media (max-width: 768px) {
+    .pdfButton {
+        margin-top: 4vw; /* 모바일에서만 적용될 margin-top */
+        width: 60vw;  /* 모바일 화면에서는 버튼 너비를 줄여줌 */
+        padding: 7px 20px;  /* 여백을 조금 더 줄여줌 */
+        font-size: 3.5vw;  /* 모바일에서는 폰트 크기를 줄여줌 */
+    }
+
+    .pdfButton span {
+        font-size: inherit;  /* 모바일에서도 상속되도록 */
+    }
+
+    .pdfIcon {
+        width: 50px;  /* 아이콘 크기를 좀 더 작게 설정 */
+        height: 50px;  /* 아이콘 크기 조정 */
+        margin-right: 30px;  /* 아이콘과 텍스트 간의 간격을 좁힘 */
+    }
+}
+
+/* 로딩 중에 나타나는 메시지 */
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+}
+
+.spinner {
+    margin-top: 20px;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #2d3c49;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+/* 스피너 애니메이션 */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/* screenReaderOnly 스타일을 추가하여 시각적으로 숨기지만, 검색 엔진에 SEO를 제공 */
+.screenReaderOnly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+

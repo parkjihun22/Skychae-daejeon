@@ -1,0 +1,89 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bener {
+    width: 100vw;
+    height: auto;
+}
+
+/* 이미지 페이드 인 애니메이션 */
+.image {
+    margin: 4vw 0;
+    width: 60%;
+    height: auto;
+    opacity: 0;  /* 처음에 이미지 숨기기 */
+    transform: translateY(20px); /* 이미지 아래 위치 설정 */
+    animation: fadeIn 1s forwards; /* 페이드 인 애니메이션 추가 */
+    transition: transform 1s, opacity 1s; 
+}
+
+/* 텍스트 박스 애니메이션 */
+.textBox {
+    margin: 3vw 0 0 0;
+    text-align: center;
+    font-size: 2.5vw;
+    opacity: 0; /* 처음에는 텍스트 숨기기 */
+    animation: fadeIn 1s 0.2s forwards; /* 텍스트 박스에 지연된 페이드 인 애니메이션 */
+}
+
+.textBox div:nth-of-type(1) {
+    font-size: 1.8vw;
+    font-weight: 200;
+}
+
+.textBox div:nth-of-type(2) {
+    font-size: 2.3vw;
+    margin-top: 0.5vw;
+    font-weight: 800;
+    color: #2d3c49;
+}
+
+/* 모바일 스타일 */
+@media (max-width: 768px) {
+    .image {
+        width: 90%; 
+        transform: translateY(20px);
+    }
+    .textBox {
+        font-size: 10vw;
+    }
+}
+
+/* 비디오 컨테이너 스타일 */
+.videoContainer {
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+}
+
+/* 모바일 비디오 컨테이너 스타일 */
+@media (max-width: 768px) {
+    .videoContainer {
+        margin-top: 3vw;
+        margin-bottom: 5vw;
+    }
+}
+
+/* 페이드 인 애니메이션 정의 */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* screenReaderOnly 스타일을 추가하여 시각적으로 숨기지만, 검색 엔진에 SEO를 제공 */
+.screenReaderOnly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}

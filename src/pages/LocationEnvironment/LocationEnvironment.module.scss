@@ -1,0 +1,186 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    width: 60rem;
+    height: auto;
+
+    @media (max-width: 900px) {
+        width: 100vw;
+    }
+}
+
+.image2 {
+    margin: 3vw 0 3vw 0;
+    width: 80%;
+    height: auto;
+    opacity: 0; /* 시작 시 이미지를 보이지 않게 설정 */
+    animation: fadeIn 2s ease-out forwards; /* 페이드 인 애니메이션 적용 */
+
+    @media (max-width: 900px) {
+        margin: 3vw 0 2vw 0;
+        width: 90%;
+    }
+}
+
+/* 애니메이션 정의 */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* 시작 시 투명 */
+    }
+    100% {
+        opacity: 1; /* 끝날 때 완전히 불투명 */
+    }
+}
+
+.image3 {
+    margin: 3vw 0 3vw 0;
+    width: 60%;
+    height: auto;
+    opacity: 0; /* 시작 시 이미지를 보이지 않게 설정 */
+    animation: fadeIn 2s ease-out forwards; /* 페이드 인 애니메이션 적용 */
+
+    @media (max-width: 900px) {
+        margin: 3vw 0 2vw 0;
+        width: 90%;
+    }
+}
+
+/* 애니메이션 정의 */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* 시작 시 투명 */
+    }
+    100% {
+        opacity: 1; /* 끝날 때 완전히 불투명 */
+    }
+}
+
+.textBox {
+    margin: 3vw 0 0 0;
+    text-align: center;
+    font-size: 2.5vw;
+    opacity: 0;  /* 기본적으로 투명하게 설정 */
+
+    animation: fadeIn 2s ease-out forwards; /* 애니메이션 적용 */
+
+    /* div 스타일 */
+    div:nth-of-type(1) {
+        font-weight: 200;
+    }
+    div:nth-of-type(2) {
+        margin-top: 0.5vw;
+        font-weight: 800;
+        color: #095052;
+    }
+    div:nth-of-type(3) {
+        font-weight: 100;
+        margin-top: 0.5vw;
+        margin-bottom: 2vw;
+        font-size: 1.5vw;
+    }
+}
+
+/* 페이드 인 애니메이션 정의 */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.section2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+
+    width: 80%;
+
+    @media (max-width: 900px) {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.section2 > * {
+    opacity: 0; // 초기 상태에서 요소를 숨깁니다.
+    transform: translateY(20px); // 초기 위치를 아래로 이동
+    animation: slide-up 3s forwards; // 애니메이션 적용
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0; // 애니메이션 시작 시 투명도
+        transform: translateY(20px); // 애니메이션 시작 시 아래로 이동
+    }
+    to {
+        opacity: 1; // 애니메이션 종료 시 불투명
+        transform: translateY(0); // 애니메이션 종료 시 원래 위치로 복귀
+    }
+}
+
+
+.commonBox {
+    margin: 2vw 0;
+    width: 80%;
+    background-color: #f8f4f0;
+    border: 1px solid #e9e2da;
+
+    @media (max-width: 900px) {
+        width: 90%;
+    }
+
+    .notice {
+        padding: 0 1vw;
+        line-height: 0.8vw;
+        font-size: 0.8vw;
+        color: #ada8a2;
+
+        @media (max-width: 900px) {
+            padding: 0  3vw;
+            font-size: 2vw;
+            line-height: 2vw;
+            text-indent: -2vw;
+        }
+    }
+
+    .notice:nth-of-type(1) {
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+
+    .notice:nth-of-type(2),
+    .notice:nth-of-type(3),
+    .notice:nth-of-type(4),
+    .notice:nth-of-type(5) {
+        padding-bottom: 1vw;
+    }
+
+    .notice:nth-of-type(6),
+    .notice:nth-of-type(7),
+    .notice:nth-of-type(8),
+    .notice:nth-of-type(9)    {
+        padding-bottom: 1vw;
+    }
+}
+
+/* screenReaderOnly 스타일을 추가하여 시각적으로 숨기지만, 검색 엔진에 SEO를 제공 */
+.screenReaderOnly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}

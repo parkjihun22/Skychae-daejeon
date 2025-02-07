@@ -1,0 +1,103 @@
+.backgroundContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    @media (max-width: 900px) {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 20vw;
+
+
+    @media (max-width: 900px) {
+        width: 45vw;
+    }
+
+    @media (max-width: 480px) {
+        width: 80vw;
+    }
+
+    .popupImg {
+        width: 100%;
+    }
+
+    .btnContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        height: 6vw;
+
+        @media (max-width: 900px) {
+            height: 5vw;
+            background-color: #d4d4d4;
+            width: 100%;
+        }
+
+        @media (max-width: 480px) {
+            height: 6vw;
+            background-color: #d4d4d4;
+            width: 100%;
+        }
+
+        .todayNotOpenBtn {
+            color: #FFFFFF;
+            cursor: pointer;
+
+            @media (max-width: 900px) {
+                padding-left: 1vw;
+                color: #333333;
+                font-size: 3vw;
+            }
+        
+            @media (max-width: 480px) {
+                padding-left: 1vw;
+                color: #333333;
+                font-size: 4vw;
+            }
+        }
+
+        .closeBtn {
+            color: #FFFFFF;
+            cursor: pointer;
+
+            @media (max-width: 900px) {
+                margin: 0;
+                padding: 1vw 2vw;
+                background-color: #333333;
+                color: #d4d4d4;
+                font-size: 2.4vw;
+            }
+
+            @media (max-width: 480px) {
+                margin: 0;
+                padding: 1vw 2vw;
+                background-color: #333333;
+                color: #d4d4d4;
+                font-size: 4vw;
+            }
+        }
+    }
+}

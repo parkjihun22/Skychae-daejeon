@@ -1,0 +1,77 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100vw;
+    height: auto;
+
+    background-color: #f6efe4;
+    // border: 1px solid #e4e4e4;
+
+    @media (max-width: 900px) {
+        margin: -0.5vw 0 0 0;
+    }
+
+}
+
+.item{
+    text-decoration: none;
+    color: inherit;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem 2rem;
+    height: auto;
+
+    border-left: 1px solid #c5bcb4;
+    border-right: 1px solid #c5bcb4;
+
+    font-family: "GmarketSansMedium";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8rem;
+
+    &:hover{
+        background-color: #ffffff;
+        color: #ad8844;
+    }
+
+    @media (max-width: 900px) {
+        font-size: 0.7rem;
+        padding: 1% 2vw;
+    }
+}
+
+.selectedItem{
+    text-decoration: none;
+    color: inherit;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.2rem 3rem;
+    height: auto;
+
+    border-left: 1px solid #c5bcb4;
+    border-right: 1px solid #c5bcb4;
+
+    font-family: "GmarketSansMedium";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9rem;
+    
+    background-color: #ffffff;
+    color: #ad8844;
+
+    @media (max-width: 900px) {
+        font-size: 1rem;
+        padding: 0.7rem 1.2rem;
+    }
+}

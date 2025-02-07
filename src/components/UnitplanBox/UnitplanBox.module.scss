@@ -1,0 +1,115 @@
+.btnContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* 버튼이 한 줄에 꽉 차면 다음 줄로 이동 */
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1vw;
+
+    margin-top: 1.5vw;
+
+    @media (max-width: 900px) {
+        margin-top: 2vw;
+        margin-left: 6vw;
+        gap: 2vw; /* 모바일에서 버튼 간격 조정 */
+    }
+
+    .typeBtn,
+    .clickedTypeBtn {
+        padding: 0.5vw 1vw;
+        border-radius: 2vw;
+        font-family: "HakgyoansimBareonbatangB";
+        font-size: 1.1vw;
+
+        cursor: pointer;
+
+        @media (max-width: 900px) {
+            padding: 2vw 5vw; /* 버튼 크기를 조정 */
+            border-radius: 3vw;
+            font-size: 3vw; /* 폰트 크기를 조정 */
+        }
+    }
+
+    .typeBtn {
+        background-color: #edcfb1;
+    }
+
+    .clickedTypeBtn {
+        background-color: #FFFFFF;
+        border: 2px solid #d1af73;
+    }
+}
+
+.imgContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+
+    margin-left: 1vw;
+    width: 100%;
+
+    @media (max-width: 900px) {
+        margin: 5vw 0 0 0;
+    }
+
+    .btn{
+        width: 300vw;
+    }
+
+    .typeImg {
+        margin: 1vw 1vw 0 1vw;
+        padding: 1vw 2vw;
+        width: 35vw;
+        background-color: #FFFFFF;
+        border: 5px solid #d1af73;
+
+        /* 기본 애니메이션이 없을 때 */
+        opacity: 1;
+        transition: opacity 0.5s ease-out;
+
+        @media (max-width: 900px) {
+            width: 70%;
+        }
+    }
+
+    /* 애니메이션 클래스 */
+    .fadeIn {
+        opacity: 0;
+        animation: fadeIn 1.3s ease-out forwards;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.98;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.imageWrapper {
+    margin-top: 3vw;
+    width: 80vw;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #d1af73; // 기존 테두리 색상 유지
+    border-radius: 10px; // 필요하면 조정
+    background-color: #fff; // 테두리가 더 잘 보이도록 배경색 추가
+
+    @media (max-width: 900px) {
+        margin-top: 5vw;  // 모바일에서는 조금 더 여유롭게
+        width: 90vw;      // 화면에 맞게 너비 조정
+        height: 40vw;     // 비율을 맞춰 높이 증가
+        border-radius: 5px; // 모바일에서는 조금 더 부드럽게
+    }
+}

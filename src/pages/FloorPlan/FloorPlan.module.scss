@@ -1,0 +1,248 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bener {
+    width: 100vw;
+    height: auto;
+  }
+  
+  .image {
+    width: 60rem;
+    height: auto;
+  
+    @media (max-width: 900px) {
+      width: 100vw;
+    }
+  }
+  
+  .textBox {
+    margin: 3vw 0 0 0;
+    text-align: center;
+    font-size: 2.5vw;
+  
+    div:nth-of-type(1) {
+      font-weight: 200;
+    }
+    div:nth-of-type(2) {
+      margin-top: 0.5vw;
+      font-weight: 800;
+      color: #2d3c49;
+    }
+  }
+  
+  .commonBox,
+  .commonBox2 {
+    margin: 2vw 0;
+    width: 60%;
+    background-color: #f8f4f0;
+    border: 1px solid #e9e2da;
+  
+    @media (max-width: 900px) {
+      width: 90%;
+    }
+  
+    .notice {
+      padding: 0 1vw;
+      line-height: 1.1vw;
+      font-size: 1vw;
+      color: #ada8a2;
+  
+      @media (max-width: 900px) {
+        padding: 0 3vw;
+        font-size: 2.5vw;
+        line-height: 3vw;
+        text-indent: -2vw;
+      }
+    }
+  
+    .notice:nth-of-type(1) {
+      padding-top: 1vw;
+      padding-bottom: 1vw;
+    }
+  
+    .notice:nth-of-type(2),
+    .notice:nth-of-type(3),
+    .notice:nth-of-type(4),
+    .notice:nth-of-type(5) {
+      padding-bottom: 1vw;
+    }
+  
+    .notice:nth-of-type(6) {
+      padding-bottom: 1vw;
+    }
+  }
+  
+  .image2 {
+    margin: 4vw 0 0 0;
+    width: 60%;
+    height: auto;
+    opacity: 0; // 처음에는 안 보이게 설정
+    transform: scale(1.05); // 처음에 살짝 커진 상태
+    transition: opacity 1.5s ease, transform 1.5s ease; // 애니메이션 효과
+  
+    &.showImage2 {
+      opacity: 1; // 애니메이션이 완료되면 이미지가 보이게
+      transform: scale(1); // 원래 크기로 돌아옴
+    }
+  
+    @media (max-width: 900px) {
+      width: 90%;
+    }
+  }
+
+/* screenReaderOnly 스타일을 추가하여 시각적으로 숨기지만, 검색 엔진에 SEO를 제공 */
+.screenReaderOnly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+
+  
+/* 탭 메뉴 컨테이너 */
+.tabMenu {
+    display: flex;
+    justify-content: center; /* 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    width: 60%;
+    background-color: #FFFFFF; /* 흰색 배경 */
+    padding: 10px 0;
+    border-radius: 5px; /* 탭 모서리 둥글게 */
+    border: 2px solid #2d3c49; /* 연한 회색 경계선 */
+    margin-top: 30px; /* 메뉴바와 탭 메뉴 사이에 간격을 30px 추가 */
+
+    @media (max-width: 900px) {
+        .tabMenu {
+          width: 80%; /* 모바일에서 가로 크기를 100%로 설정 */
+          padding: 5px 0; /* 패딩 크기 조정 */
+          margin-top: 20px; /* 탭 메뉴 상단 간격 줄이기 */
+        
+}
+    }
+}
+
+/* 탭 버튼 스타일 */
+.tabMenu button {
+    font-family: 'SUIT-Regular';
+    background-color: transparent;
+    border: 1px solid transparent; /* 기본 경계선 없음 */
+    padding: 12px 20px;
+    margin-right: 30px; /* 탭 사이의 간격 */
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #2d3c49; /* 기본 글자색 */
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease, border-bottom 0.3s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px; /* 모서리 둥글게 */
+}
+
+/* 기본 탭 버튼 호버 상태 */
+.tabMenu button:hover {
+    background-color: #f4f7fb; /* 호버 시 배경색 변화 */
+    color: #890d18; /* 호버 시 색상 변경 */
+}
+
+/* 활성화된 탭 버튼 */
+.tabMenu button.activeTab {
+    font-family: 'SUIT-Regular';
+    background-color: #2d3c49; /* 활성화된 버튼 배경 */
+    color: #FFFFFF; /* 활성화된 버튼 글자색 */
+    
+    border-bottom: 3px solid #FFFFFF; /* 활성화된 탭 아래에 두꺼운 밑줄 */
+}
+
+/* 탭 버튼이 비활성화 상태일 때 (밑줄 없음) */
+.tabMenu button:not(.activeTab) {
+    color: #2d3c49; /* 비활성화된 탭 색상 */
+    border-bottom: 2px solid transparent; /* 밑줄 투명 */
+}
+
+/* 각 버튼 사이에 약간의 마진 추가 (마지막 버튼 마진 없애기) */
+.tabMenu button:last-child {
+    margin-right: 0;
+}
+
+/* 모바일 화면에서 가로 배열 유지 */
+@media (max-width: 768px) {
+    .tabMenu {
+        width: 90%;
+        flex-wrap: wrap; /* 버튼이 화면에 맞게 줄 바꿈되도록 설정 */
+        justify-content: space-between; /* 버튼 간격을 균등하게 배분 */
+    }
+
+    .tabMenu button {
+        font-size: 0.8rem; /* 글자 크기 약간 축소 */
+        padding: 5px 5px; /* 패딩 줄이기 */
+        margin-right: 1px; /* 버튼 간 간격 줄이기 */
+        flex: 1 1 30%; /* 버튼이 화면을 꽉 차게 하고, 3개 정도 한 줄에 배치되도록 설정 */
+        text-align: center; /* 텍스트 중앙 정렬 */
+        white-space: nowrap; /* 글자가 잘리지 않게 설정 */
+    }
+
+    .tabMenu button:last-child {
+        margin-right: 0; /* 마지막 버튼에는 마진 없애기 */
+    }
+}
+
+/* 아주 작은 화면 (극단적인 모바일 기기) */
+@media (max-width: 480px) {
+    .tabMenu button {
+        font-size: 0.9rem; /* 글자 크기 더 축소 */
+        padding: 8px 10px; /* 패딩 더 줄이기 */
+    }
+}
+
+
+
+  
+/* 영상 컨테이너 */
+.videoContainer {
+    margin-top: 20px;
+    width: 90%;
+    max-width: 1000px; /* 최대 너비 */
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+
+/* 영상 스타일 */
+.videoPlayer {
+    width: 100%;
+    height: 500px; /* 고정된 영상 높이 */
+    border-radius: 8px;
+    border: 1px solid #e9e2da;
+    transition: all 0.3s ease;
+}
+
+/* 모바일 화면에서 영상 스타일 */
+@media (max-width: 768px) {
+    .videoPlayer {
+        height: 300px; /* 모바일에서는 영상 높이를 줄여서 화면에 맞게 표시 */
+    }
+}
+
+/* 아주 작은 화면에서 (예: 480px 이하) */
+@media (max-width: 480px) {
+    .videoPlayer {
+        height: 250px; /* 화면이 더 작은 경우 영상 높이를 더욱 줄임 */
+    }
+}
+
+
+  
+  
+  
