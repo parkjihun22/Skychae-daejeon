@@ -54,12 +54,12 @@ const ComplexGuide1 = () => {
 					<meta name="description" content="대전 하늘채 스카이앤 3차의 단지 배치도를 통해 각 동의 위치와 편의시설의 배치를 확인하세요. 효율적인 동선 설계와 조경 공간, 입주민의 생활 편의를 고려한 배치를 상세히 안내합니다." />
 					<meta property="og:title" content="대전 하늘채 스카이앤 3차- 단지배치도" />
 					<meta property="og:description" content="대전 하늘채 스카이앤 3차의 단지 배치도를 통해 각 동의 위치와 편의시설의 배치를 확인하세요. 효율적인 동선 설계와 조경 공간, 입주민의 생활 편의를 고려한 배치를 상세히 안내합니다." />
-					<meta property="og:image" content="https://www.bunyang-114.com/Main1.png" />
-					<meta property="og:url" content="https://www.bunyang-114.com/ComplexGuide/intro" />
+					<meta property="og:image" content="http://www.kikaporn.com/Main1.png" />
+					<meta property="og:url" content="http://www.kikaporn.com/ComplexGuide/intro" />
 					<meta name="twitter:title" content="대전 하늘채 스카이앤 3차 - 단지배치도" />
 					<meta name="twitter:description" content="대전 하늘채 스카이앤 3차의 단지 배치도를 통해 각 동의 위치와 편의시설의 배치를 확인하세요. 효율적인 동선 설계와 조경 공간, 입주민의 생활 편의를 고려한 배치를 상세히 안내합니다." />
-					<meta name="twitter:image" content="https://www.bunyang-114.com/Main1.png" />
-					<meta name="twitter:url" content="https://www.bunyang-114.com/ComplexGuide/intro" />
+					<meta name="twitter:image" content="http://www.kikaporn.com/Main1.png" />
+					<meta name="twitter:url" content="http://www.kikaporn.com/ComplexGuide/intro" />
 					</Helmet>  
 
 			<Header isChanged={isScroll} />

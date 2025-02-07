@@ -52,16 +52,16 @@ const ComplexGuide1 = () => {
     <div className={styles.container}>
 
           <Helmet>
-          <title>힐스테이트 용인 마크밸리  - 인터넷청약</title>
-          <meta name="description" content="힐스테이트 용인 마크밸리의 인터넷 청약은 간편하고 빠르게 분양에 참여할 수 있는 방법을 제공합니다. 온라인을 통해 청약 절차를 빠르게 진행하며, 언제 어디서든 쉽게 신청 가능합니다. 청약 전 반드시 필요한 정보와 절차를 확인하고, 청약을 통해 힐스테이트 용인 마크밸리의 기회를 놓치지 마세요." />
-          <meta property="og:title" content="힐스테이트 용인 마크밸리 - 인터넷청약" />
-          <meta property="og:description" content="힐스테이트 용인 마크밸리의 인터넷 청약은 간편하고 빠르게 분양에 참여할 수 있는 방법을 제공합니다. 온라인을 통해 청약 절차를 빠르게 진행하며, 언제 어디서든 쉽게 신청 가능합니다. 청약 전 반드시 필요한 정보와 절차를 확인하고, 청약을 통해 힐스테이트 용인 마크밸리의 기회를 놓치지 마세요." />
-          <meta property="og:image" content="https://www.vaaclubs.com/Main1.png" />
-          <meta property="og:url" content="https://www.vaaclubs.com/SalesInfo/guide" />
-          <meta name="twitter:title" content="힐스테이트 용인 마크밸리 - 인터넷청약" />
-          <meta name="twitter:description" content="힐스테이트 용인 마크밸리의 인터넷 청약은 간편하고 빠르게 분양에 참여할 수 있는 방법을 제공합니다. 온라인을 통해 청약 절차를 빠르게 진행하며, 언제 어디서든 쉽게 신청 가능합니다. 청약 전 반드시 필요한 정보와 절차를 확인하고, 청약을 통해 힐스테이트 용인 마크밸리의 기회를 놓치지 마세요." />
-          <meta name="twitter:image" content="https://www.vaaclubs.com/Main1.png" />
-          <meta name="twitter:url" content="https://www.vaaclubs.com/SalesInfo/guide" />
+          <title>대전 하늘채 스카이앤 3차  - 인터넷청약</title>
+          <meta name="description" content="대전 하늘채 스카이앤 3차의 인터넷 청약은 간편하고 빠르게 분양에 참여할 수 있는 방법을 제공합니다. 온라인을 통해 청약 절차를 빠르게 진행하며, 언제 어디서든 쉽게 신청 가능합니다. 청약 전 반드시 필요한 정보와 절차를 확인하고, 청약을 통해 힐스테이트 용인 마크밸리의 기회를 놓치지 마세요." />
+          <meta property="og:title" content="대전 하늘채 스카이앤 3차 - 인터넷청약" />
+          <meta property="og:description" content="힐대전 하늘채 스카이앤 3차의 인터넷 청약은 간편하고 빠르게 분양에 참여할 수 있는 방법을 제공합니다. 온라인을 통해 청약 절차를 빠르게 진행하며, 언제 어디서든 쉽게 신청 가능합니다. 청약 전 반드시 필요한 정보와 절차를 확인하고, 청약을 통해 힐스테이트 용인 마크밸리의 기회를 놓치지 마세요." />
+          <meta property="og:image" content="http://www.kikaporn.com/Main1.png" />
+          <meta property="og:url" content="http://www.kikaporn.com/SalesInfo/guide" />
+          <meta name="twitter:title" content="대전 하늘채 스카이앤 3차 - 인터넷청약" />
+          <meta name="twitter:description" content="대전 하늘채 스카이앤 3차의 인터넷 청약은 간편하고 빠르게 분양에 참여할 수 있는 방법을 제공합니다. 온라인을 통해 청약 절차를 빠르게 진행하며, 언제 어디서든 쉽게 신청 가능합니다. 청약 전 반드시 필요한 정보와 절차를 확인하고, 청약을 통해 힐스테이트 용인 마크밸리의 기회를 놓치지 마세요." />
+          <meta name="twitter:image" content="http://www.kikaporn.com/Main1.png" />
+          <meta name="twitter:url" content="http://www.kikaporn.com/SalesInfo/guide" />
           </Helmet> 	
       
 
@@ -72,20 +72,20 @@ const ComplexGuide1 = () => {
 
       <MenuBar contents={menuContents} />
       {/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
-      <h1 className={styles.screenReaderOnly}>힐스테이트 용인 마크밸리 - 인터넷청약</h1>
-			<p className={styles.screenReaderOnly}>힐스테이트 용인 마크밸리의 인터넷 청약은 간편하고 빠르게 분양에 참여할 수 있는 방법을 제공합니다. 온라인을 통해 청약 절차를 빠르게 진행하며, 언제 어디서든 쉽게 신청 가능합니다. 청약 전 반드시 필요한 정보와 절차를 확인하고, 청약을 통해 힐스테이트 용인 마크밸리의 기회를 놓치지 마세요.
+      <h1 className={styles.screenReaderOnly}>대전 하늘채 스카이앤 3차 - 인터넷청약</h1>
+			<p className={styles.screenReaderOnly}>힐대전 하늘채 스카이앤 3차의 인터넷 청약은 간편하고 빠르게 분양에 참여할 수 있는 방법을 제공합니다. 온라인을 통해 청약 절차를 빠르게 진행하며, 언제 어디서든 쉽게 신청 가능합니다. 청약 전 반드시 필요한 정보와 절차를 확인하고, 청약을 통해 힐스테이트 용인 마크밸리의 기회를 놓치지 마세요.
       </p>
 
       <div className={styles.textBox}>
         <div>인터넷 청약하는 방법을 확인하세요</div>
-        <div>소수만 누리는 프리미엄 힐스테이트 용인 마크밸리</div>
+        <div>소수만 누리는 프리미엄 대전 하늘채 스카이앤 3차</div>
       </div>
 
       {/* 이미지에 애니메이션 효과 추가 */}
       {/* <img
         className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
         src={page1}
-        alt="힐스테이트 용인 마크밸리청약안내-image1"
+        alt="대전 하늘채 스카이앤 3차 청약안내-image1"
         onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
       /> */}
 

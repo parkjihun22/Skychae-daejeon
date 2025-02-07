@@ -55,12 +55,12 @@ const ComplexGuide3 = () => {
 					<meta name="description" content="대전 하늘채 스카이앤 3차의 커뮤니티 시설을 소개합니다. 피트니스 센터, 독서실, 카페 등 다양한 편의시설이 마련되어 있어 입주민의 생활 품격을 높이고, 편리함을 제공합니다." />
 					<meta property="og:title" content="대전 하늘채 스카이앤 3차 - 커뮤니티" />
 					<meta property="og:description" content="대전 하늘채 스카이앤 3차의 커뮤니티 시설을 소개합니다. 피트니스 센터, 독서실, 카페 등 다양한 편의시설이 마련되어 있어 입주민의 생활 품격을 높이고, 편리함을 제공합니다." />
-					<meta property="og:image" content="https://www.bunyang-114.com/Main1.png" />
-					<meta property="og:url" content="https://www.bunyang-114.com/ComplexGuide/community" />
+					<meta property="og:image" content="http://www.kikaporn.com/Main1.png" />
+					<meta property="og:url" content="http://www.kikaporn.com/ComplexGuide/community" />
 					<meta name="twitter:title" content="대전 하늘채 스카이앤 3차 - 커뮤니티" />
 					<meta name="twitter:description" content="대전 하늘채 스카이앤 3차의 커뮤니티 시설을 소개합니다. 피트니스 센터, 독서실, 카페 등 다양한 편의시설이 마련되어 있어 입주민의 생활 품격을 높이고, 편리함을 제공합니다." />
-					<meta name="twitter:image" content="https://www.bunyang-114.com/Main1.png" />
-					<meta name="twitter:url" content="https://www.bunyang-114.com/ComplexGuide/community" />
+					<meta name="twitter:image" content="http://www.kikaporn.com/Main1.png" />
+					<meta name="twitter:url" content="http://www.kikaporn.com/ComplexGuide/community" />
 					</Helmet> 
   
 

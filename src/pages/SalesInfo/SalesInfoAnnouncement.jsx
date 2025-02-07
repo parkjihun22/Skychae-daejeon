@@ -69,16 +69,16 @@ const ComplexGuide1 = () => {
         <div className={styles.container}>
 
         <Helmet>
-          <title>힐스테이트 용인 마크밸리 - 모집공고안내</title>
-          <meta name="description" content="힐스테이트 용인 마크밸리의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요." />
-          <meta property="og:title" content="힐스테이트 용인 마크밸리 - 인터넷청약" />
-          <meta property="og:description" content="힐스테이트 용인 마크밸리의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요." />
-          <meta property="og:image" content="https://www.vaaclubs.com/Main1.png" />
-          <meta property="og:url" content="https://www.vaaclubs.com/SalesInfo/announcement" />
-          <meta name="twitter:title" content="힐스테이트 용인 마크밸리- 인터넷청약" />
-          <meta name="twitter:description" content="힐스테이트 용인 마크밸리의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요." />
-          <meta name="twitter:image" content="https://www.vaaclubs.com/Main1.png" />
-          <meta name="twitter:url" content="https://www.vaaclubs.com/SalesInfo/announcement" />
+          <title>대전 하늘채 스카이앤 3차 - 모집공고안내</title>
+          <meta name="description" content="대전 하늘채 스카이앤 3차의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요." />
+          <meta property="og:title" content="대전 하늘채 스카이앤 3차 - 인터넷청약" />
+          <meta property="og:description" content="대전 하늘채 스카이앤 3차의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요." />
+          <meta property="og:image" content="http://www.kikaporn.com/Main1.png" />
+          <meta property="og:url" content="http://www.kikaporn.com/SalesInfo/announcement" />
+          <meta name="twitter:title" content="대전 하늘채 스카이앤 3차- 인터넷청약" />
+          <meta name="twitter:description" content="대전 하늘채 스카이앤 3차의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요." />
+          <meta name="twitter:image" content="http://www.kikaporn.com/Main1.png" />
+          <meta name="twitter:url" content="http://www.kikaporn.com/SalesInfo/announcement" />
           </Helmet>
 
             <Header isChanged={isScroll} />
@@ -88,17 +88,17 @@ const ComplexGuide1 = () => {
 
             <MenuBar contents={menuContents} />
             {/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
-            <h1 className={styles.screenReaderOnly}>힐스테이트 용인 마크밸리 - 모집공고안내</h1>
-			<p className={styles.screenReaderOnly}>힐스테이트 용인 마크밸리의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요.
+            <h1 className={styles.screenReaderOnly}>대전 하늘채 스카이앤 3차 - 모집공고안내</h1>
+			<p className={styles.screenReaderOnly}>대전 하늘채 스카이앤 3차의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요.
             </p>
 
             <div className={styles.textBox}>
                 <div>입주자 모집공고안내를 확인하세요</div>
-                <div>힐스테이트 용인 마크밸리</div>
+                <div>대전 하늘채 스카이앤 3차</div>
             </div>
 
             {/* <img className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`} src={page1}
-                alt="힐스테이트 용인 마크밸리 모집공고안내-image1"
+                alt="대전 하늘채 스카이앤 3차 모집공고안내-image1"
                 onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
                 /> */}
 

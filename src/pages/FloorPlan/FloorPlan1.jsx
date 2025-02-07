@@ -62,12 +62,12 @@ const FloorPlan1 = () => {
 					<meta name="description" content="대전 하늘채 스카이앤 3차의 평면도를 통해 세대별 구조와 공간 활용도를 확인하세요. 실용적이고 혁신적인 설계를 기반으로 한 다양한 평면 구성이 여러분의 생활을 더 편리하게 만듭니다." />
 					<meta property="og:title" content="대전 하늘채 스카이앤 3차 - 59A" />
 					<meta property="og:description" content="대전 하늘채 스카이앤 3차의 평면도를 통해 세대별 구조와 공간 활용도를 확인하세요. 실용적이고 혁신적인 설계를 기반으로 한 다양한 평면 구성이 여러분의 생활을 더 편리하게 만듭니다." />
-					<meta property="og:image" content="https://www.bunyang-114.com/Main1.png" />
-					<meta property="og:url" content="https://www.bunyang-114.com/FloorPlan/59A" />
+					<meta property="og:image" content="http://www.kikaporn.com/Main1.png" />
+					<meta property="og:url" content="http://www.kikaporn.com/FloorPlan/59A" />
 					<meta name="twitter:title" content="대전 하늘채 스카이앤 3차- 59A" />
 					<meta name="twitter:description" content="대전 하늘채 스카이앤 3차의 평면도를 통해 세대별 구조와 공간 활용도를 확인하세요. 실용적이고 혁신적인 설계를 기반으로 한 다양한 평면 구성이 여러분의 생활을 더 편리하게 만듭니다." />
-					<meta name="twitter:image" content="https://www.bunyang-114.com/Main1.png" />
-					<meta name="twitter:url" content="https://www.bunyang-114.com/FloorPlan/59A" />
+					<meta name="twitter:image" content="http://www.kikaporn.com/Main1.png" />
+					<meta name="twitter:url" content="http://www.kikaporn.com/FloorPlan/59A" />
 					</Helmet>  
 
 			<Header isChanged={isScroll} />

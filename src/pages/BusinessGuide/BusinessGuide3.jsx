@@ -66,12 +66,12 @@ const BusinessGuide2 = () => {
 					<meta name="description" content="대전 하늘채 스카이앤 3차 청약 당첨자를 위한 필수 서류 목록과 준비 절차를 안내합니다. 간단하고 명확한 정보로 청약 당첨 후 필요한 준비를 돕고, 서류 제출에 문제가 없도록 상세한 가이드를 제공합니다" />
 					<meta property="og:title" content="대전 하늘채 스카이앤 3차 - 당첨자서류안내" />
 					<meta property="og:description" content="대전 하늘채 스카이앤 3차 청약 당첨자를 위한 필수 서류 목록과 준비 절차를 안내합니다. 간단하고 명확한 정보로 청약 당첨 후 필요한 준비를 돕고, 서류 제출에 문제가 없도록 상세한 가이드를 제공합니다" />
-					<meta property="og:image" content="https://www.bunyang-114.com/Main1.png" />
-					<meta property="og:url" content="https://www.bunyang-114.com/BusinessGuide/documents" />
+					<meta property="og:image" content="http://www.kikaporn.com/Main1.png" />
+					<meta property="og:url" content="http://www.kikaporn.com/BusinessGuide/documents" />
 					<meta name="twitter:title" content="대전 하늘채 스카이앤 3차 - 당첨자서류안내" />
 					<meta name="twitter:description" content="대전 하늘채 스카이앤 3차 청약 당첨자를 위한 필수 서류 목록과 준비 절차를 안내합니다. 간단하고 명확한 정보로 청약 당첨 후 필요한 준비를 돕고, 서류 제출에 문제가 없도록 상세한 가이드를 제공합니다" />
-					<meta name="twitter:image" content="https://www.bunyang-114.com/Main1.png" />
-					<meta name="twitter:url" content="https://www.bunyang-114.com/BusinessGuide/documents" />
+					<meta name="twitter:image" content="http://www.kikaporn.com/Main1.png" />
+					<meta name="twitter:url" content="http://www.kikaporn.com/BusinessGuide/documents" />
 					</Helmet>   
 
 			<Header isChanged={isScroll} />

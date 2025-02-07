@@ -46,16 +46,16 @@ const LocationEnvironment1 = () => {
 		<div className={styles.container}>
 
 					<Helmet>
-					<title>힐스테이트 용인 마크밸리 - 프리미엄</title>
-					<meta name="description" content="힐스테이트 용인 마크밸리의 차별화된 프리미엄을 만나보세요. 고급스러운 디자인, 첨단 기술이 결합된 설계, 입주민을 위한 특별한 혜택 등을 통해 푸르지오만의 독보적인 가치를 제공합니다." />
-					<meta property="og:title" content="힐스테이트 용인 마크밸리 - 프리미엄" />
-					<meta property="og:description" content="힐스테이트 용인 마크밸리만의 차별화된 프리미엄을 만나보세요. 고급스러운 디자인, 첨단 기술이 결합된 설계, 입주민을 위한 특별한 혜택 등을 통해 푸르지오만의 독보적인 가치를 제공합니다." />
-					<meta property="og:image" content="https://www.bunyang-114.com/Main1.png" />
-					<meta property="og:url" content="https://www.bunyang-114.com/LocationEnvironment/primium" />
-					<meta name="twitter:title" content="힐스테이트 용인 마크밸리 - 프리미엄" />
-					<meta name="twitter:description" content="힐스테이트 용인 마크밸리의 차별화된 프리미엄을 만나보세요. 고급스러운 디자인, 첨단 기술이 결합된 설계, 입주민을 위한 특별한 혜택 등을 통해 푸르지오만의 독보적인 가치를 제공합니다." />
-					<meta name="twitter:image" content="https://www.bunyang-114.com/Main1.png" />
-					<meta name="twitter:url" content="https://www.bunyang-114.com/LocationEnvironment/primium" />
+					<title>대전 하늘채 스카이앤 3차 - 프리미엄</title>
+					<meta name="description" content="대전 하늘채 스카이앤 3차의 차별화된 프리미엄을 만나보세요. 고급스러운 디자인, 첨단 기술이 결합된 설계, 입주민을 위한 특별한 혜택 등을 통해 푸르지오만의 독보적인 가치를 제공합니다." />
+					<meta property="og:title" content="대전 하늘채 스카이앤 3차 - 프리미엄" />
+					<meta property="og:description" content="대전 하늘채 스카이앤 3차의 차별화된 프리미엄을 만나보세요. 고급스러운 디자인, 첨단 기술이 결합된 설계, 입주민을 위한 특별한 혜택 등을 통해 푸르지오만의 독보적인 가치를 제공합니다." />
+					<meta property="og:image" content="http://www.kikaporn.com/Main1.png" />
+					<meta property="og:url" content="http://www.kikaporn.com/LocationEnvironment/primium" />
+					<meta name="twitter:title" content="대전 하늘채 스카이앤 3차 - 프리미엄" />
+					<meta name="twitter:description" content="대전 하늘채 스카이앤 3차의 차별화된 프리미엄을 만나보세요. 고급스러운 디자인, 첨단 기술이 결합된 설계, 입주민을 위한 특별한 혜택 등을 통해 푸르지오만의 독보적인 가치를 제공합니다." />
+					<meta name="twitter:image" content="http://www.kikaporn.com/Main1.png" />
+					<meta name="twitter:url" content="http://www.kikaporn.com/LocationEnvironment/primium" />
 					</Helmet> 		
 			
 
@@ -66,16 +66,16 @@ const LocationEnvironment1 = () => {
 
 			<MenuBar contents={menuContents} />
 			{/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
-			<h1 className={styles.screenReaderOnly}>힐스테이트 용인 마크밸리 - 프리미엄</h1>
-			<p className={styles.screenReaderOnly}>힐스테이트 용인 마크밸리의 차별화된 프리미엄을 만나보세요. 고급스러운 디자인, 첨단 기술이 결합된 설계, 입주민을 위한 특별한 혜택 등을 통해 푸르지오만의 독보적인 가치를 제공합니다.
+			<h1 className={styles.screenReaderOnly}>대전 하늘채 스카이앤 3차 - 프리미엄</h1>
+			<p className={styles.screenReaderOnly}>대전 하늘채 스카이앤 3차의 차별화된 프리미엄을 만나보세요. 고급스러운 디자인, 첨단 기술이 결합된 설계, 입주민을 위한 특별한 혜택 등을 통해 푸르지오만의 독보적인 가치를 제공합니다.
 			</p>
 
 			<div className={styles.textBox}>
 				<div>용인의 눈부신 가치 위에</div>
-				<div>힐스테이트 용인 마크밸리의 새로운 자부심으로 찾아옵니다.</div>
+				<div>대전 하늘채 스카이앤 3차의 새로운 자부심으로 찾아옵니다.</div>
 			</div>
 
-			{/* <img src={page1} className={styles.image3} alt="힐스테이트 용인 마크밸리프리미엄-image1" /> */}
+			{/* <img src={page1} className={styles.image3} alt="대전 하늘채 스카이앤 3차프리미엄-image1" /> */}
 			<Ready />
 
 			<Footer />

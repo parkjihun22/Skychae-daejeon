@@ -62,12 +62,12 @@ const BusinessGuide1 = () => {
 					<meta name="description" content="대전 하늘채 스카이앤 3차의 사업개요를 통해 프로젝트의 비전과 가치를 확인하세요. 단지 설계, 개발 목표, 주변 환경과의 조화 등을 중점적으로 설명하여 평택에서의 새로운 주거 중심지로서의 가능성을 보여드립니다." />
 					<meta property="og:title" content="대전 하늘채 스카이앤 3차 - 사업안내" />
 					<meta property="og:description" content="대전 하늘채 스카이앤 3차의 사업개요를 통해 프로젝트의 비전과 가치를 확인하세요. 단지 설계, 개발 목표, 주변 환경과의 조화 등을 중점적으로 설명하여 평택에서의 새로운 주거 중심지로서의 가능성을 보여드립니다." />
-					<meta property="og:image" content="https://www.bunyang-114.com/Main1.png" />
-					<meta property="og:url" content="https://www.bunyang-114.com/BusinessGuide/intro" />
+					<meta property="og:image" content="http://www.kikaporn.com/Main1.png" />
+					<meta property="og:url" content="http://www.kikaporn.com/BusinessGuide/intro" />
 					<meta name="twitter:title" content="대전 하늘채 스카이앤 3차 - 사업안내" />
 					<meta name="twitter:description" content="대전 하늘채 스카이앤 3차의 사업개요를 통해 프로젝트의 비전과 가치를 확인하세요. 단지 설계, 개발 목표, 주변 환경과의 조화 등을 중점적으로 설명하여 평택에서의 새로운 주거 중심지로서의 가능성을 보여드립니다." />
-					<meta name="twitter:image" content="https://www.bunyang-114.com/Main1.png" />
-					<meta name="twitter:url" content="https://www.bunyang-114.com/BusinessGuide/intro" />
+					<meta name="twitter:image" content="http://www.kikaporn.com/Main1.png" />
+					<meta name="twitter:url" content="http://www.kikaporn.com/BusinessGuide/intro" />
 					</Helmet>       
 			
 

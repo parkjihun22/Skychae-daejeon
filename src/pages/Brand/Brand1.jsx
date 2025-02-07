@@ -54,12 +54,12 @@ const Brand1 = () => {
 					<meta name="description" content="대전 하늘채 스카이앤 3차의 브랜드 철학과 가치를 소개합니다. 현대건설의 대표 브랜드 힐스테이트는 고급스러움과 실용성을 결합한 주거공간을 제공합니다. 고객의 삶을 중심에 둔 설계와 혁신적인 기술, 지속 가능한 개발 철학을 통해 미래를 선도하는 주거 문화를 만들어갑니다. 힐스테이트의 브랜드 스토리와 비전을 확인해보세요." />
 					<meta property="og:title" content="대전 하늘채 스카이앤 3차 - 브랜드소개" />
 					<meta property="og:description" content="대전 하늘채 스카이앤 3차의 브랜드 철학과 가치를 소개합니다. 현대건설의 대표 브랜드 힐스테이트는 고급스러움과 실용성을 결합한 주거공간을 제공합니다. 고객의 삶을 중심에 둔 설계와 혁신적인 기술, 지속 가능한 개발 철학을 통해 미래를 선도하는 주거 문화를 만들어갑니다. 힐스테이트의 브랜드 스토리와 비전을 확인해보세요." />
-					<meta property="og:image" content="https://www.bunyang-114.com/Main1.png" />
-					<meta property="og:url" content="https://www.bunyang-114.com/Brand/intro" />
+					<meta property="og:image" content="http://www.kikaporn.com/Main1.png" />
+					<meta property="og:url" content="http://www.kikaporn.com/Brand/intro" />
 					<meta name="twitter:title" content="대전 하늘채 스카이앤 3차 - 브랜드소개" />
 					<meta name="twitter:description" content="대전 하늘채 스카이앤 3차의 브랜드 철학과 가치를 소개합니다. 현대건설의 대표 브랜드 힐스테이트는 고급스러움과 실용성을 결합한 주거공간을 제공합니다. 고객의 삶을 중심에 둔 설계와 혁신적인 기술, 지속 가능한 개발 철학을 통해 미래를 선도하는 주거 문화를 만들어갑니다. 힐스테이트의 브랜드 스토리와 비전을 확인해보세요." />
-					<meta name="twitter:image" content="https://www.bunyang-114.com/Main1.png" />
-					<meta name="twitter:url" content="https://www.bunyang-114.com/Brand/intro" />
+					<meta name="twitter:image" content="http://www.kikaporn.com/Main1.png" />
+					<meta name="twitter:url" content="http://www.kikaporn.com/Brand/intro" />
 					</Helmet>  
             
 

@@ -54,16 +54,16 @@ const Interior1 = () => {
 		<div className={styles.container}>
 
 					<Helmet>
-					<title>힐스테이트 용인 마크밸리 - 59A인테리어</title>
-					<meta name="description" content="인테리어 페이지에서는 힐스테이트 용인 마크밸리의 고급 인테리어 디자인을 소개합니다. 세련된 디자인과 최첨단 인테리어 요소들이 결합되어, 입주자들에게 고급스러움과 편안함을 제공합니다. 각 공간의 인테리어 스타일과 자재를 확인하여 더욱 매력적인 주거 공간을 발견할 수 있습니다." />
-					<meta property="og:title" content="힐스테이트 용인 마크밸리 - 59인테리어" />
-					<meta property="og:description" content="인테리어 페이지에서는 힐스테이트 용인 마크밸리의 고급 인테리어 디자인을 소개합니다. 세련된 디자인과 최첨단 인테리어 요소들이 결합되어, 입주자들에게 고급스러움과 편안함을 제공합니다. 각 공간의 인테리어 스타일과 자재를 확인하여 더욱 매력적인 주거 공간을 발견할 수 있습니다." />
-					<meta property="og:image" content="https://www.vaaclubs.com/Main1.png" />
-					<meta property="og:url" content="https://www.vaaclubs.com/Interior/59A" />
-					<meta name="twitter:title" content="힐스테이트 용인 마크밸리 - 59인테리어" />
-					<meta name="twitter:description" content="인테리어 페이지에서는 힐스테이트 용인 마크밸리의 고급 인테리어 디자인을 소개합니다. 세련된 디자인과 최첨단 인테리어 요소들이 결합되어, 입주자들에게 고급스러움과 편안함을 제공합니다. 각 공간의 인테리어 스타일과 자재를 확인하여 더욱 매력적인 주거 공간을 발견할 수 있습니다." />
-					<meta name="twitter:image" content="https://www.vaaclubs.com/Main1.png" />
-					<meta name="twitter:url" content="https://www.vaaclubs.com/Interior/59A" />
+					<title>대전 하늘채 스카이앤 3차 - 59A인테리어</title>
+					<meta name="description" content="인테리어 페이지에서는 대전 하늘채 스카이앤 3차의 고급 인테리어 디자인을 소개합니다. 세련된 디자인과 최첨단 인테리어 요소들이 결합되어, 입주자들에게 고급스러움과 편안함을 제공합니다. 각 공간의 인테리어 스타일과 자재를 확인하여 더욱 매력적인 주거 공간을 발견할 수 있습니다." />
+					<meta property="og:title" content="대전 하늘채 스카이앤 3차 - 59인테리어" />
+					<meta property="og:description" content="인테리어 페이지에서는 대전 하늘채 스카이앤 3차의 고급 인테리어 디자인을 소개합니다. 세련된 디자인과 최첨단 인테리어 요소들이 결합되어, 입주자들에게 고급스러움과 편안함을 제공합니다. 각 공간의 인테리어 스타일과 자재를 확인하여 더욱 매력적인 주거 공간을 발견할 수 있습니다." />
+					<meta property="og:image" content="http://www.kikaporn.com/Main1.png" />
+					<meta property="og:url" content="http://www.kikaporn.com/Interior/59A" />
+					<meta name="twitter:title" content="대전 하늘채 스카이앤 3차 - 59인테리어" />
+					<meta name="twitter:description" content="인테리어 페이지에서는 대전 하늘채 스카이앤 3차의 고급 인테리어 디자인을 소개합니다. 세련된 디자인과 최첨단 인테리어 요소들이 결합되어, 입주자들에게 고급스러움과 편안함을 제공합니다. 각 공간의 인테리어 스타일과 자재를 확인하여 더욱 매력적인 주거 공간을 발견할 수 있습니다." />
+					<meta name="twitter:image" content="http://www.kikaporn.com/Main1.png" />
+					<meta name="twitter:url" content="http://www.kikaporn.com/Interior/59A" />
 					</Helmet> 	
 
 			<Header isChanged={isScroll} />
@@ -74,12 +74,12 @@ const Interior1 = () => {
 
 			<MenuBar contents={menuContents} />
 			{/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
-            <h1 className={styles.screenReaderOnly}>힐스테이트 용인 마크밸리  - 59인테리어</h1>
-			<p className={styles.screenReaderOnly}>인테리어 페이지에서는 힐스테이트 용인 마크밸리의 고급 인테리어 디자인을 소개합니다. 세련된 디자인과 최첨단 인테리어 요소들이 결합되어, 입주자들에게 고급스러움과 편안함을 제공합니다. 각 공간의 인테리어 스타일과 자재를 확인하여 더욱 매력적인 주거 공간을 발견할 수 있습니다.
+            <h1 className={styles.screenReaderOnly}>대전 하늘채 스카이앤 3차  - 59인테리어</h1>
+			<p className={styles.screenReaderOnly}>인테리어 페이지에서는 대전 하늘채 스카이앤 3차의 고급 인테리어 디자인을 소개합니다. 세련된 디자인과 최첨단 인테리어 요소들이 결합되어, 입주자들에게 고급스러움과 편안함을 제공합니다. 각 공간의 인테리어 스타일과 자재를 확인하여 더욱 매력적인 주거 공간을 발견할 수 있습니다.
 			</p>
 
 			<div className={styles.textBox}>
-				<div>힐스테이트 용인 마크밸리가 눈부신 가치 위에</div>
+				<div>대전 하늘채 스카이앤 3차가 눈부신 가치 위에</div>
 				<div>새로운 자부심으로 찾아옵니다.</div>
 			</div>
 
@@ -87,7 +87,7 @@ const Interior1 = () => {
 			{/* <img
 				className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
 				src={page1}
-				alt="힐스테이트 용인 마크밸리 인테리어59A-image1"
+				alt="대전 하늘채 스카이앤 3차 인테리어59A-image1"
 				onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
 			/> */}
 			
