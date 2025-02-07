@@ -548,7 +548,7 @@ const Main = () => {
           <div className={styles.containerRegistration}>
             <div className={styles.registrationHeader}>대전 하늘채 스카이앤 3차</div>
             <div className={styles.registrationDescription}>
-              방문예약
+              관심고객등록
             </div>
             {/* Formspree 연동: onSubmit 제거, action, method 추가 */}
             <form
