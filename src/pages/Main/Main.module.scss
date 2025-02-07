@@ -590,7 +590,7 @@
 
         .mainImage {
             width: 100vw;
-            height: 90vh;
+            height: 70vh;
             object-fit: cover; /* 이미지 비율 유지하면서 가득 채우기 */
             filter: brightness(0.8) contrast(1.2); /* 이미지에 어두운 필터 적용, 대비 강조 */
         }
