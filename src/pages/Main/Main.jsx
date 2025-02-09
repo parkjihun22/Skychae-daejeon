@@ -345,51 +345,53 @@ const Main = () => {
                 </div>
               </div>
               {/* 오른쪽 관심고객 등록 폼 영역 */}
-              <div className={styles.registrationSection}>
-                <div className={styles.registrationHeader}>대전 하늘채 스카이앤 3차 </div>
-                <div className={styles.registrationDescription}>
-                  관심고객등록
-                  
-                </div>
-                {/* Formspree 연동: onSubmit 제거, action, method 추가 */}
-                <form
-                  className={styles.registrationForm}
-                  action="https://formspree.io/f/xnnjvebv"
-                  method="POST"
-                >
-                  <label htmlFor="name">이름<span style={{ color: 'red' }}>*</span></label>
-                  <input
-                    id="name"
-                    type="text"
-                    name="name"
-                    placeholder=""
-                    value={registration.name}
-                    onChange={handleInputChange}
-                    required
-                  />
-                  <label htmlFor="phonenumber">연락처<span style={{ color: 'red' }}>*</span></label>
-                  <input
-                    id="Phonenumber"
-                    type="tel"
-                    name="phone"
-                    placeholder=""
-                    value={registration.phone}
-                    onChange={handleInputChange}
-                    required
-                  />
-                  {/* 날짜 선택 입력란에 라벨 추가 */}
-    
-                  <div className={styles.registrationForm}>
-                  <label htmlFor="visitdata">방문일자 <span style={{ color: 'red' }}>*</span></label>
-                    <input
-                      id="visitDate"
-                      type="date"
-                      name="visitDate"
-                      value={registration.visitDate}
-                      onChange={handleInputChange}
-                      required
-                    />
-                  </div>
+              <div className={styles.containerRegistration}>
+            <div className={styles.registrationHeader}>용인 힐스테이트 마크밸리</div>
+            <div className={styles.registrationDescription}>
+              방문예약
+            </div>
+            {/* Formspree 연동: onSubmit 제거, action, method 추가 */}
+            <form
+              className={styles.registrationForm}
+              action="https://naver.me/5N1tYGcp"
+              method="POST"
+            >
+              <label htmlFor="name">이름<span style={{ color: 'red' }}>*</span></label>
+              <input
+                type="text"
+                name="name"
+                placeholder=""
+                value={registration.name}
+                onChange={handleInputChange}
+                required
+              />
+              <label htmlFor="phonenumber">연락처<span style={{ color: 'red' }}>*</span></label>
+              <input
+                type="tel"
+                name="phone"
+                placeholder=""
+                value={registration.phone}
+                onChange={handleInputChange}
+                required
+              />
+              <label htmlFor="date of birth">생년월일 [6자리]<span style={{ color: 'red' }}>*</span></label>
+              <input
+                type="text"
+                name="date of birth"
+                placeholder=""
+                value={registration.phone}
+                onChange={handleInputChange}
+                required
+              />
+              <label htmlFor="adrees">주소<span style={{ color: 'red' }}>*</span></label>
+              <input
+                type="text"
+                name="date of birth"
+                placeholder=""
+                value={registration.phone}
+                onChange={handleInputChange}
+                required
+              />
                   <button type="submit">등록하기</button>
                 </form>
               </div>
@@ -546,14 +548,14 @@ const Main = () => {
 
           {/* 관심고객 등록 섹션 (모바일 버전) */}
           <div className={styles.containerRegistration}>
-            <div className={styles.registrationHeader}>대전 하늘채 스카이앤 3차</div>
+            <div className={styles.registrationHeader}>용인 힐스테이트 마크밸리</div>
             <div className={styles.registrationDescription}>
-              관심고객등록
+              방문예약
             </div>
             {/* Formspree 연동: onSubmit 제거, action, method 추가 */}
             <form
               className={styles.registrationForm}
-              action="https://formspree.io/f/xnnjvebv"
+              action="https://naver.me/5N1tYGcp"
               method="POST"
             >
               <label htmlFor="name">이름<span style={{ color: 'red' }}>*</span></label>
@@ -574,18 +576,24 @@ const Main = () => {
                 onChange={handleInputChange}
                 required
               />
-              {/* 날짜 선택 입력란을 감싸는 컨테이너 */}
-              <div className={styles.registrationForm}>
-              <label htmlFor="visitdate">방문일자선택<span style={{ color: 'red' }}>*</span></label>
-                <input
-                  id="visitDate"
-                  type="date"
-                  name="visitDate"
-                  value={registration.visitDate}
-                  onChange={handleInputChange}
-                  required
-                />
-              </div>
+              <label htmlFor="date of birth">생년월일 [6자리]<span style={{ color: 'red' }}>*</span></label>
+              <input
+                type="text"
+                name="date of birth"
+                placeholder=""
+                value={registration.phone}
+                onChange={handleInputChange}
+                required
+              />
+              <label htmlFor="adrees">주소<span style={{ color: 'red' }}>*</span></label>
+              <input
+                type="text"
+                name="date of birth"
+                placeholder=""
+                value={registration.phone}
+                onChange={handleInputChange}
+                required
+              />
               <button type="submit">등록하기</button>
             </form>
           </div>
