@@ -134,14 +134,18 @@ const Header = ({ isChanged }) => {
 							</Link>
 
 							<div className={styles.itemBox}>
-								<a href="https://naver.me/G58kVeiB" className={isChange ? styles.linkItem : styles.scrolledLinkItem}>
-									모바일 상담예약
-								</a>
-								{menuArray.map((menu, idx) => (
-									<Link key={idx} to={menu.subMenu[0].subUrl} className={isChange ? styles.item : styles.scrolledItem}>
-										{menu.title}
-									</Link>
-								))}
+  							<a href="#interestForm" className={isChange ? styles.linkItem : styles.scrolledLinkItem}>
+    						모바일 상담예약
+  							</a>
+  							{menuArray.map((menu, idx) => (
+    						<Link
+							key={idx}
+      						to={menu.subMenu[0].subUrl}
+      						className={isChange ? styles.item : styles.scrolledItem}
+   							 >
+      						{menu.title}
+							</Link>
+  							))}		
 							</div>
 
 							<a href="https://naver.me/G58kVeiB" className={isChange ? styles.phoneNumber : styles.scrolledPhoneNumber}>
@@ -163,7 +167,7 @@ const Header = ({ isChanged }) => {
 							</div>
 
 							<div className={styles.itemBox}>
-								<a href="https://naver.me/G58kVeiB" className={styles.linkItem}>
+								<a href="#interestForm" className={styles.linkItem}>
 									모바일 상담예약
 								</a>
 								{menuArray.map((menu, idx) => (
