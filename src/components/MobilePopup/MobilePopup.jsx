@@ -99,10 +99,11 @@ const MobilePopup = ({ onClosed, popupImage, numbering }) => {
                     </map>
                 )}
 
-                <div className={styles.btnContainer}>
+                {/* 버튼들도 주석 처리 */}
+                {/* <div className={styles.btnContainer}>
                     <div className={styles.todayNotOpenBtn} onClick={() => setType(1)}>오늘 하루 보지 않기</div>
                     <div className={styles.closeBtn} onClick={() => setType(2)}>닫기</div>
-                </div>
+                </div> */}
             </div>
         </div>
     );
