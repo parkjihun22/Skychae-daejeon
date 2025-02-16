@@ -36,6 +36,7 @@ import mobilePopupPage3 from "../../assets/Popup/mobilepage3.jpg";
 import mobilePopupPage4 from "../../assets/Popup/mobilepage3.jpg";
 import map1 from "../../assets/Main/map1.jpg";
 import mobilemap1 from "../../assets/Main/mobilemap1.jpg";
+import InterestPopup from "../../components/InterestPopup/InterestPopup";
 
 import subpinkimg from "../../assets/Main/subpinkimg.jpg";
 
@@ -87,6 +88,7 @@ const Main = () => {
   const [isOpenPopup2, setIsOpenPopup2] = useState(true);
   const [isOpenPopup3, setIsOpenPopup3] = useState(true);
   const [isOpenPopup4, setIsOpenPopup4] = useState(true);
+  const [isInterestPopupOpen, setIsInterestPopupOpen] = useState(false); // 방문예약 팝업 상태
   const isMobile = useMediaQuery({ query: "(max-width: 900px)" });
 
   // 관심고객 등록 폼 상태 관리 (방문일자 필드 포함)
@@ -105,14 +107,7 @@ const Main = () => {
     }));
   };
 
-  // 기존 제출 핸들러는 Formspree를 사용할 것이므로 제거(또는 사용하지 않음)
-  // const handleRegistrationSubmit = (e) => {
-  //   e.preventDefault();
-  //   alert(
-  //     `등록되었습니다!\n이름: ${registration.name}\n연락처: ${registration.phone}\n이메일: ${registration.email}\n방문일자: ${registration.visitDate}`
-  //   );
-  //   setRegistration({ name: "", phone: "", email: "", visitDate: "" });
-  // };
+
 
   // 스크롤 시 헤더 변경 처리
   useEffect(() => {
@@ -210,7 +205,7 @@ const Main = () => {
             <FixIcon type="absolute" />
           </div>
 
-          {/* <div className={styles.section}>
+          <div className={styles.section}>
             <div className={styles.section1}>
               <div className={styles.textBox}>
                 <div className={styles.text1}>Location</div>
@@ -218,17 +213,26 @@ const Main = () => {
                   " 방문 예약 고객 전원 신세계상품권 100% 증정 "
                 </div>
                 <div className={styles.text3}>
-                  - 대전 중심상업지구 매우인접 <br />
+                  - 브레인시티 중심상업지구 매우인접 <br />
                   - 첨단 아주대학교 종합병원 도보 5분 <br />
-                  - 평택 지제역 1호선, STR, KTX, GTX-A · C 확정으로 펜타역세권 <br />
-                  - 모두를 누리는 대전 하늘채 스카이앤 3차
+                  - 평택 지제역 1호선, STR, KTX, GTX-A · C 확정으로 펜타역세권{" "}
+                  <br />
+                  - 모두를 누리는 평택 브레인시티 푸르지오
                 </div>
                 <div className={styles.text4}>
-                  <a href="https://naver.me/G58kVeiB" target="_black">
-                    관심고객 등록하기 {">"}
-                  </a>
-                </div>
-              </div>
+            {/* 외부 링크 대신 방문예약 클릭 시 팝업 호출*/}
+             <a
+             href="#"
+              onClick={(e) => {
+              e.preventDefault();
+              setIsInterestPopupOpen(true);
+              }}
+            className={styles.popupBtn}
+            >
+            관심고객 등록하기 {">"}
+            </a>
+          </div>   
+          </div>
               <div className={styles.menuBox}>
                 <img src={section1_Image1} alt="대전 하늘채 스카이앤 3차 브랜드소개-image2" />
                 <Link to="/Brand/video" className={styles.btn}>
@@ -236,7 +240,7 @@ const Main = () => {
                 </Link>
               </div>
             </div>
-          </div> */}
+          </div> 
 
           {/* <div className={styles.section}>
             <div className={styles.section8}>
@@ -421,6 +425,14 @@ const Main = () => {
           <div className={styles.section5}>
             <Footer />
           </div>
+          {/* 방문예약 팝업 (PC) */}
+          {isInterestPopupOpen && (
+            <InterestPopup
+              onClose={() => setIsInterestPopupOpen(false)}
+              registration={registration}
+              handleInputChange={handleInputChange}
+            />
+          )}
         </>
       ) : (
         // 모바일 버전
@@ -473,23 +485,34 @@ const Main = () => {
             </div>
           </div>
 
-          {/* <div className={styles.container1}>
+          <div className={styles.container1}>
             <div className={styles.text1}>Location</div>
             <div className={styles.text2}>
               "방문예약을 하시면 신세계 상품권 100% 증정 "
             </div>
             <div className={styles.text3}>
-              - 대전 중심상업지구 가장인접한 입지<br />
-              - 첨단 아주대학교 AI종합병원, 의료R＆D센터 도보 5분<br />
-              - 평택 지제역 KTX, GTX-A · C 확정 삼성전자 평택캠퍼스, 초등학교, 수변공원<br />
+              - 대전 중심상업지구 가장인접한 입지
+              <br />
+              - 첨단 아주대학교 AI종합병원, 의료R＆D센터 도보 5분
+              <br />
+              - 평택 지제역 KTX, GTX-A · C 확정 삼성전자 평택캠퍼스, 초등학교, 수변공원
+              <br />
               - 모두를 누리는 반도체밸리 주거 타운의 완성
             </div>
             <div className={styles.text4}>
-              <a href="https://naver.me/G58kVeiB" target="_black">
-                관심고객 등록하기 {">"}
-              </a>
-            </div>
-          </div> */}
+            {/* 외부 링크 대신 방문예약 클릭 시 팝업 호출 */}
+             <a
+             href="#"
+              onClick={(e) => {
+              e.preventDefault();
+              setIsInterestPopupOpen(true);
+              }}
+            className={styles.popupBtn}
+            >
+            관심고객 등록하기 {">"}
+            </a>
+          </div>   
+          </div>
 
           {/* <div className={styles.container7}>
             <div className={styles.textBox}>
@@ -618,6 +641,15 @@ const Main = () => {
             <Footer />
             <FixIcon />
           </div>
+
+          {/* 방문예약 팝업 (모바일) */}
+          {isInterestPopupOpen && (
+            <InterestPopup
+              onClose={() => setIsInterestPopupOpen(false)}
+              registration={registration}
+              handleInputChange={handleInputChange}
+            />
+          )}
         </div>
       )}
     </>

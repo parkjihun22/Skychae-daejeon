@@ -1,304 +1,184 @@
-/* Header 전체 스타일 */
-.containerFirst,
-.container {
-    font-family: 'NanumHumanTTFBold';
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 5rem; // 항목 간의 간격을 줄임
-
+/* gif 배너: 전체 너비, 중앙 정렬, 양쪽 초록색 배경 */
+.gifBanner {
+    width: 100%;
+    height: 11.04vh; /* 데스크탑 기본 높이 */
+    text-align: center;
+    background-color: #2d3c49;
     position: fixed;
     top: 0;
     left: 0;
-
-    width: 100%;
-    height: 6vw;
     z-index: 100;
-
-    text-decoration: none;
-
-    &.containerFirst {
-        background-color: transparent;
-        border-bottom: 1px solid #FFFFFF;
-    }
-
-    &.container {
-        background-color: #FFFFFF;
-        border-bottom: 1px solid #2e1705;
-    }
-
+  
     img {
-        position: absolute;
-        top: 20%;
-        left: 2%;
-        transform: translateY(-50%, -50%);
-        width: 4vw;
+      display: inline-block;
+      width: 60vw; /* 기본: 자동 */
+      height: auto;
+      max-width: 100%;
+    }
+  }
+  
+  /* 모바일 버전: 배너 높이 및 이미지 크기 조절 */
+  @media (max-width: 900px) {
+    .gifBanner {
+      /* 모바일 컨테이너 높이를 줄입니다. 예를 들어 20vh로 변경 */
+      height: 4vh; 
+  
+      img {
+        /* 이미지가 컨테이너에 꽉 차도록 설정 */
+        width: 100%;
         height: auto;
-
-        @media (max-width: 900px) {
-            width: 5rem;
-        }
+        object-fit: contain; /* 이미지 비율 유지하면서 컨테이너에 맞춤 */
+      }
     }
-
-    .title,
-    .scrolledTitle {
-        font-family: 'NanumHumanTTFBold';
-        font-weight: 600;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
-    .title {
-        color: #ffffff00;
-    }
-
-    .scrolledTitle {
-        color: #053b0200;
-    }
-
-    .itemBox {
-        
-        display: flex;
-        flex-direction: row;
-        gap: 0.9rem; // 항목 간의 간격을 줄임
-        margin-right: 13.5vw;
-
-        .linkItem,
-        .scrolledLinkItem {
-            
-            padding: 0.5vw 0; // 패딩 조정
-            font-size: 1vw;
-            border-bottom: 3px solid rgba(0, 0, 0, 0); // 초기 border-bottom 투명
-            text-decoration: none; // 기본 밑줄 취소
-            color: #2d3c49; // 기본 글자색 설정 
-
-            &:hover {
-                border-bottom: px solid #2d3c49; // hover 시 하단 border만 나타남
-                color: #2d3c49; // hover 시 글자색 변경
-                font-size: 1vw; // 크기 유지
-                font-weight: normal; // 두께를 일반으로 유지
-            }
-        }
-
-        .linkItem {
-            color: #FFFFFF; // 기본 글자색 흰색
-        }
-
-        .scrolledLinkItem {
-            
-            color: #2d3c49; // 기본 글자색 흰색
-            font-weight: bold;
-        }
-
-        .item,
-        .scrolledItem {
-        
-            padding: 0.5vw 0; // 패딩 조정
-            font-size: 1vw;
-            border-bottom: 3px solid rgba(0, 0, 0, 0);
-            text-decoration: none;
-
-            &:hover {
-                
-                border-bottom: 5px solid #2d3c49;
-            }
-        }
-
-        .item {
-            color: #FFFFFF;
-        }
-
-        .scrolledItem {
-            font-family: 'SUIT-Regular';
-        font-weight: 500;
-            color: #2d3c49;
-
-        }
-    }
-
-    .phoneNumber,
-    .scrolledPhoneNumber {
-        font-family: 'NanumHumanTTFBold';
-        font-weight: 600;
-        position: absolute;
-        top: 50%;
-        right: 3%;
-        transform: translate(0, -50%);
-        text-align: center;
-        font-size: 1.5vw;
-        text-decoration: none;
-    }
-
-    .phoneNumber {
-        color: #FFFFFF;
-    }
-
-    .scrolledPhoneNumber {
-        font-family: 'NanumHumanTTFBold';
-        color: #2d3c49;
-        font-weight: bold;
-    }
-}
-
-/* 하위메뉴 스타일 */
-.secondContainer {
-
-    font-weight: 600;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
+  }
+  
+  /* 헤더 전체 래퍼: gif 배너 바로 아래에 위치하도록 top값 수정 */
+  .headerWrapper {
     position: fixed;
-    top: 0;
+    top: 10.8vh; /* gif 배너 높이만큼 아래에 위치 */
     left: 0;
-
     width: 100%;
-    height: 18vw;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    height: auto; /* 내부 내용 전체를 포함 */
+  }
+  
+  /* 기존 PC 헤더 (투명 그라데이션 배경) - 내부 요소 중앙 정렬 */
+  .headerInitial {
+    font-family: 'MinSans-Regular';
+    width: 100%;
+    height: 4vw; /* 헤더 높이 */
     z-index: 100;
-
+    background: linear-gradient(135deg, rgba(30, 34, 33, 0.785) 50%, rgba(36, 44, 42, 0.779) 70%);
+    display: flex;
+    justify-content: center;  // 전체 내용 중앙 정렬
+    align-items: center;
+    gap: 5rem;
+    padding: 0 2rem;
+    position: relative; /* 드롭다운 기준 */
+  }
+  
+  /* 로고: 기존 크기 유지 */
+  .logo {
+    width: 3vw;
+    margin-top: 0.3vw;
+    height: auto;
+  }
+  
+  /* 상단 메뉴 영역 */
+  .itemBox {
+    display: flex;
+    flex-direction: row;
+    gap: 1.1rem;
+    align-items: center;
+  }
+  
+  /* 모바일 상담예약 링크 */
+  .consultLink {
+    font-family: 'MinSans-Regular';
     text-decoration: none;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #2e1705;
-
-    img {
-        position: absolute;
-        top: 7%;
-        left: 2%;
-        width: 4vw;
-        height: auto;
-
-        @media (max-width: 900px) {
-            width: 3rem;
-        }
+    font-size: 0.85vw;
+    color: #FFFFFF;
+    padding: 0.5vw 0;
+    transition: color 0.3s ease;
+    
+    &:hover {
+      color: #d59c38;
     }
-
-    .title,
-    .scrolledTitle {
-        
-        position: absolute;
-        top: 0;
-        left: 0;
+  }
+  
+  /* 각 상단 메뉴 항목 */
+  .navItem {
+    position: relative;
+  }
+  
+  /* 상단 메뉴 링크: 기본 흰색, 호버 시 색상 변경 */
+  .navLink {
+    text-decoration: none;
+    font-size: 0.9vw;
+    color: #FFFFFF;
+    padding: 0.5vw 0;
+    transition: color 0.3s ease;
+    
+    &:hover {
+      color: #d59c38;
     }
-
-    .title {
-        color: #ffffff00;
+  }
+  
+  /* 전화번호: 기존 스타일 유지 */
+  .phoneNumber {
+    font-family: 'Pretendard-Regular';
+    text-decoration: none;
+    font-size: 1.2vw;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 0.2vw;
+    transition: color 0.3s ease;
+    
+    &:hover {
+      color: #d59c38;
     }
-
-    .scrolledTitle {
-        color: #053b0200;
+  }
+  
+  /* full‑width 드롭다운 컨테이너: headerInitial 바로 아래에 배치 */
+  .dropdownContainer {
+    position: absolute;
+    top: 4vw; /* 헤더 높이 등에 맞춰 조정 */
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    z-index: 90;
+  }
+  
+  /* 드롭다운 내 서브 메뉴 항목들을 inline-flex로 배치 */
+  .dropdownContent {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  /* 드롭다운 항목 */
+  .dropdownItem {
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: #2d3c49;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease;
+    
+    &:hover {
+      background: #d59c38;
     }
-
-    .itemBox {
-        font-family: 'NanumHumanTTFBold';
-        position: absolute;
-        top: 10%;
-        display: flex;
-        flex-direction: row;
-        gap: 0.1vw; // 항목 간의 간격을 줄임x
-        margin-right: 13vw;
-
-        
-        .linkItem {
-            
-            padding: 0.5vw 0;
-            margin-right: 0.5vw;
-            font-size: 1vw;
-            border-bottom: 10px solid rgba(0, 0, 0, 0); // 초기 border-bottom 투명
-            text-decoration: none; // 기본 밑줄 취소
-            color: #2d3c49; // 기본 글자색 설정
-            font-weight: 500;
-
-        }
-
-        .detailItemBox {
-        
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-
-            .item {
-                margin-bottom: 0.4vw; // 마진 줄임
-                padding: 0.5vw 0; // 패딩 조정
-                width: 5vw;
-                text-align: center;
-                font-size: 1vw;
-                font-weight: 300;
-                border-bottom: 3px solid rgba(0, 0, 0, 0);
-                text-decoration: none;
-                color: #2d3c49;
-
-                &:hover {
-                    font-family: 'NanumHumanTTFBold';
-        font-weight: 800;
-                    border-bottom: 3px solid #d59c38;
-                }
-            }
-
-            .secondItemBox {
-                display: flex;
-                flex-direction: column;
-
-                .subitem {
-                    font-family: 'SUIT-Regular';
-                    font-weight: 600;
-                    padding: 0.3vw 0.5vw;
-                    border-radius: 0.2vw;
-                    text-align: center;
-                    text-decoration: none;
-                    font-size: 0.8vw;
-                    color: #000000;
-
-                    &:hover {
-                        color: #FFFFFF;
-                        background-color: #d59c38;
-                    }
-                }
-            }
-        }
-    }
-
-    .phoneNumber {
-        font-family: 'SUIT-Regular';
-        font-weight: 600;
-        position: absolute;
-        top: 12%;
-        right: 3%;
-        text-align: center;
-        font-size: 1.5vw;
-        font-weight: bold;
-        text-decoration: none;
-        color: #2d3c49;
-    }
-}
-
-// 모바일 header
-.mobileHeader {
+  }
+  
+  /* 모바일 헤더 (헤더는 gif 배너 아래에 위치하도록 top값 수정) */
+  .mobileHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
+    /* 헤더가 gif 배너 바로 아래에 위치하도록 top: 12.1vh; */
     position: fixed;
-    top: 0;
+    top: 4vh;
     left: 0;
-
     padding: 5vw 0 4vw 0;
-
-    width: 99.9%;
-    height: 6vw;
-    background-color: #FFFFFF;
+    width: 100%;
+    height: 4vw;
+    background-color: #ffffff;
     border-bottom: 1px solid #2d3c49;
-    z-index: 100;
-
+    z-index: 1001;
     text-decoration: none;
-
-    .logo { 
-        margin-top: 1vw;
-        width: 8vw;
+  
+    .logo {
+      margin-top: -0.5vw;
+      width: 8vw;
     }
-
     .icon {
-        margin: 20vw 3.5vw;
+      margin: 20vw 3.5vw;
     }
-}
+  }
+  
