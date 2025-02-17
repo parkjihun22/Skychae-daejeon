@@ -24,7 +24,7 @@
     }
 
     .circlebox {
-        position: absolute;
+        position: absolute; 
         top: 48%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -53,7 +53,7 @@
     }
 
     cursor: pointer;
-    z-index: 50;
+    z-index: 1000;
 }
 
 @keyframes spin {
