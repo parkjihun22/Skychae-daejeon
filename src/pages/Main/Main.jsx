@@ -358,7 +358,7 @@ const Main = () => {
                 {/* Formspree 연동: onSubmit 제거, action, method 추가 */}
                 <form
                   className={styles.registrationForm}
-                  action="https://formspree.io/f/xnnjvebv"
+                  action="https://formspree.io/f/xkgopypr"
                   method="POST"
                 >
                   <label htmlFor="name">이름<span style={{ color: 'red' }}>*</span></label>

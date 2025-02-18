@@ -19,7 +19,7 @@ const InterestPopup = ({ onClose, registration, handleInputChange }) => {
             <img src={yourImageSrc} alt="Form 안내 이미지" />
           </div>
           */}
-          <form action="https://formspree.io/f/xnnjvebv" method="POST">
+          <form action="https://formspree.io/f/xkgopypr" method="POST">
             <div className={styles.formGroup}>
               <label htmlFor="name">
                 이름<span>*</span>
