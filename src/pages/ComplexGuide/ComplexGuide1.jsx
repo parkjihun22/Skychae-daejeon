@@ -48,19 +48,84 @@ const ComplexGuide1 = () => {
 
 	return (
 		<div className={styles.container}>
+<Helmet>
+		{/* 기본 문자셋 및 모바일 최적화를 위한 meta 태그 */}
+		<meta charSet="utf-8" />
+		<meta
+		  name="viewport"
+		  content="width=device-width, initial-scale=1, maximum-scale=1"
+		/>
+		<meta name="theme-color" content="#ffffff" />
+		<meta name="robots" content="index, follow" />
 
-					<Helmet>
-					<title>대전 하늘채 스카이앤 3차 - 단지배치도</title>
-					<meta name="description" content="대전 하늘채 스카이앤 3차의 단지 배치도를 통해 각 동의 위치와 편의시설의 배치를 확인하세요. 효율적인 동선 설계와 조경 공간, 입주민의 생활 편의를 고려한 배치를 상세히 안내합니다." />
-					<meta property="og:title" content="대전 하늘채 스카이앤 3차- 단지배치도" />
-					<meta property="og:description" content="대전 하늘채 스카이앤 3차의 단지 배치도를 통해 각 동의 위치와 편의시설의 배치를 확인하세요. 효율적인 동선 설계와 조경 공간, 입주민의 생활 편의를 고려한 배치를 상세히 안내합니다." />
-					<meta property="og:image" content="http://www.kikaporn.com/Main1.png" />
-					<meta property="og:url" content="http://www.kikaporn.com/ComplexGuide/intro" />
-					<meta name="twitter:title" content="대전 하늘채 스카이앤 3차 - 단지배치도" />
-					<meta name="twitter:description" content="대전 하늘채 스카이앤 3차의 단지 배치도를 통해 각 동의 위치와 편의시설의 배치를 확인하세요. 효율적인 동선 설계와 조경 공간, 입주민의 생활 편의를 고려한 배치를 상세히 안내합니다." />
-					<meta name="twitter:image" content="http://www.kikaporn.com/Main1.png" />
-					<meta name="twitter:url" content="http://www.kikaporn.com/ComplexGuide/intro" />
-					</Helmet>  
+		{/* SEO 최적화를 위한 메타 태그 */}
+		<title>대전하늘채스카이앤3차 - 단지배치도</title>
+		<meta
+		  name="description"
+		  content="대전 하늘채 스카이앤 3차의 단지 배치도를 통해 각 동의 위치와 편의시설의 배치를 확인하세요. 효율적인 동선 설계와 조경 공간, 입주민의 생활 편의를 고려한 배치를 상세히 안내합니다.
+"
+		/>
+		<meta
+		  name="keywords"
+		  content="대전하늘채스카이앤3차, 대전하늘채스카이앤, 대전하늘채스카이앤3차모델하우스"
+		/>
+		<link rel="canonical" href="https://www.kikaporn.com/ComplexGuide/intro" />
+
+		{/* Open Graph - 소셜 미디어 공유 최적화 */}
+		<meta
+		  property="og:title"
+		  content="대전하늘채스카이앤3차 - 단지배치도"
+		/>
+		<meta
+		  property="og:description"
+		  content="대전 하늘채 스카이앤 3차의 단지 배치도를 통해 각 동의 위치와 편의시설의 배치를 확인하세요. 효율적인 동선 설계와 조경 공간, 입주민의 생활 편의를 고려한 배치를 상세히 안내합니다.
+"
+		/>
+		<meta
+		  property="og:image"
+		  content="https://www.kikaporn.com/Main1.png"
+		/>
+		<meta
+		  property="og:url"
+		  content="https://www.kikaporn.com/ComplexGuide/intro"
+		/>
+		<meta property="og:site_name" content="대전하늘채스카이앤3차" />
+
+		{/* Twitter 카드 설정 */}
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta
+		  name="twitter:title"
+		  content="대전하늘채스카이앤3차 - 단지배치도"
+		/>
+		<meta
+		  name="twitter:description"
+		  content="대전 하늘채 스카이앤 3차의 단지 배치도를 통해 각 동의 위치와 편의시설의 배치를 확인하세요. 효율적인 동선 설계와 조경 공간, 입주민의 생활 편의를 고려한 배치를 상세히 안내합니다.
+"
+		/>
+		<meta
+		  name="twitter:image"
+		  content="https://www.kikaporn.com/Main1.png"
+		/>
+		<meta
+		  name="twitter:url"
+		  content="https://www.kikaporn.com/ComplexGuide/intro"
+		/>
+
+		{/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
+		<script type="application/ld+json">
+		  {`
+			{
+				"@context": "https://schema.org",
+				"@type": "WebPage",
+				"name": "대전하늘채스카이앤3차 - 단지배치도",
+				"description": "대전 하늘채 스카이앤 3차의 단지 배치도를 통해 각 동의 위치와 편의시설의 배치를 확인하세요. 효율적인 동선 설계와 조경 공간, 입주민의 생활 편의를 고려한 배치를 상세히 안내합니다.
+
+					",
+				"url": "https://www.kikaporn.com/ComplexGuide/intro"
+			}
+			`}
+		</script>
+	  </Helmet>
 
 			<Header isChanged={isScroll} />
 			<FixIcon />

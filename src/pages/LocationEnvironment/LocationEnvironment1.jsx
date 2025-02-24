@@ -63,18 +63,84 @@ const LocationEnvironment1 = () => {
 	return (
 		<div className={styles.container}>
 
-					<Helmet>
-					<title>대전 하늘채 스카이앤 3차 - 입지안내</title>
-					<meta name="description" content="대전 하늘채 스카이앤 3차의 입지 정보를 확인하세요. 뛰어난 교통망, 생활 인프라, 교육 및 쇼핑 시설 등 편리한 주변 환경을 소개하며, 평택의 중심에서 누릴 수 있는 생활의 편리함과 가치를 제공합니다" />
-					<meta property="og:title" content="대전 하늘채 스카이앤 3차 - 입지안내" />
-					<meta property="og:description" content="대전 하늘채 스카이앤 3차의 입지 정보를 확인하세요. 뛰어난 교통망, 생활 인프라, 교육 및 쇼핑 시설 등 편리한 주변 환경을 소개하며, 평택의 중심에서 누릴 수 있는 생활의 편리함과 가치를 제공합니다" />
-					<meta property="og:image" content="http://www.kikaporn.com/Main1.png" />
-					<meta property="og:url" content="http://www.kikaporn.com/LocationEnvironment/intro" />
-					<meta name="twitter:title" content="대전 하늘채 스카이앤 3차 - 입지안내" />
-					<meta name="twitter:description" content="대전 하늘채 스카이앤 3차의 입지 정보를 확인하세요. 뛰어난 교통망, 생활 인프라, 교육 및 쇼핑 시설 등 편리한 주변 환경을 소개하며, 평택의 중심에서 누릴 수 있는 생활의 편리함과 가치를 제공합니다" />
-					<meta name="twitter:image" content="http://www.kikaporn.com/Main1.png" />
-					<meta name="twitter:url" content="http://www.kikaporn.com/LocationEnvironment/intro" />
-					</Helmet> 	
+<Helmet>
+	{/* 기본 문자셋 및 모바일 최적화를 위한 meta 태그 */}
+	<meta charSet="utf-8" />
+	<meta
+	  name="viewport"
+	  content="width=device-width, initial-scale=1, maximum-scale=1"
+	/>
+	<meta name="theme-color" content="#ffffff" />
+	<meta name="robots" content="index, follow" />
+
+	{/* SEO 최적화를 위한 메타 태그 */}
+	<title>대전하늘채스카이앤3차 - 입지환경</title>
+	<meta
+	  name="description"
+	  content="대전 하늘채 스카이앤 3차의 입지 정보를 확인하세요. 뛰어난 교통망, 생활 인프라, 교육 및 쇼핑 시설 등 편리한 주변 환경을 소개하며, 평택의 중심에서 누릴 수 있는 생활의 편리함과 가치를 제공합니다
+"
+	/>
+	<meta
+	  name="keywords"
+	  content="대전하늘채스카이앤3차, 대전하늘채스카이앤, 대전하늘채스카이앤3차모델하우스"
+	/>
+	<link rel="canonical" href="https://www.kikaporn.com/LocationEnvironment/intro" />
+
+	{/* Open Graph - 소셜 미디어 공유 최적화 */}
+	<meta
+	  property="og:title"
+	  content="대전하늘채스카이앤3차 - 입지환경"
+	/>
+	<meta
+	  property="og:description"
+	  content="대전 하늘채 스카이앤 3차의 입지 정보를 확인하세요. 뛰어난 교통망, 생활 인프라, 교육 및 쇼핑 시설 등 편리한 주변 환경을 소개하며, 평택의 중심에서 누릴 수 있는 생활의 편리함과 가치를 제공합니다
+"
+	/>
+	<meta
+	  property="og:image"
+	  content="https://www.kikaporn.com/Main1.png"
+	/>
+	<meta
+	  property="og:url"
+	  content="https://www.kikaporn.com/LocationEnvironment/intro"
+	/>
+	<meta property="og:site_name" content="대전하늘채스카이앤3차" />
+
+	{/* Twitter 카드 설정 */}
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta
+	  name="twitter:title"
+	  content="대전하늘채스카이앤3차 - 입지환경"
+	/>
+	<meta
+	  name="twitter:description"
+	  content="대전 하늘채 스카이앤 3차의 입지 정보를 확인하세요. 뛰어난 교통망, 생활 인프라, 교육 및 쇼핑 시설 등 편리한 주변 환경을 소개하며, 평택의 중심에서 누릴 수 있는 생활의 편리함과 가치를 제공합니다
+"
+	/>
+	<meta
+	  name="twitter:image"
+	  content="https://www.kikaporn.com/Main1.png"
+	/>
+	<meta
+	  name="twitter:url"
+	  content="https://www.kikaporn.com/LocationEnvironment/intro"
+	/>
+
+	{/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
+	<script type="application/ld+json">
+	  {`
+	  {
+		"@context": "https://schema.org",
+		"@type": "WebPage",
+		"name": "대전하늘채스카이앤3차 - 입지환경",
+		"description": "대전 하늘채 스카이앤 3차의 입지 정보를 확인하세요. 뛰어난 교통망, 생활 인프라, 교육 및 쇼핑 시설 등 편리한 주변 환경을 소개하며, 평택의 중심에서 누릴 수 있는 생활의 편리함과 가치를 제공합니다
+
+		  ",
+		"url": "https://www.kikaporn.com/LocationEnvironment/intro"
+	  }
+	  `}
+	</script>
+	</Helmet>	
 
 			<Header isChanged={isScroll} />
 			<FixIcon />

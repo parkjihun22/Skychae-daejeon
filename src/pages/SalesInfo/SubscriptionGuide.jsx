@@ -50,19 +50,92 @@ const ComplexGuide1 = () => {
 
   return (
     <div className={styles.container}>
+<Helmet>
+    {/* 기본 문자셋 및 모바일 최적화를 위한 meta 태그 */}
+    <meta charSet="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="robots" content="index, follow" />
 
-          <Helmet>
-          <title>대전 하늘채 스카이앤 3차 - 체크포인트</title>
-          <meta name="description" content="대전 하늘채 스카이앤 3차분양 전 필수 체크포인트를 확인하세요. 청약 자격, 서류 준비, 일정 등 분양 절차에서 놓치지 말아야 할 중요한 사항들을 정리해두었습니다. 정확한 정보와 절차를 통해 분양을 성공적으로 진행할 수 있도록 돕습니다." />
-          <meta property="og:title" content="대전 하늘채 스카이앤 3차- 체크포인트" />
-          <meta property="og:description" content="대전 하늘채 스카이앤 3차 분양 전 필수 체크포인트를 확인하세요. 청약 자격, 서류 준비, 일정 등 분양 절차에서 놓치지 말아야 할 중요한 사항들을 정리해두었습니다. 정확한 정보와 절차를 통해 분양을 성공적으로 진행할 수 있도록 돕습니다." />
-          <meta property="og:image" content="http://www.kikaporn.com/Main1.png" />
-          <meta property="og:url" content="http://www.kikaporn.com//SubscriptionGuide" />
-          <meta name="twitter:title" content="대전 하늘채 스카이앤 3차 - 체크포인트" />
-          <meta name="twitter:description" content="대전 하늘채 스카이앤 3차 분양 전 필수 체크포인트를 확인하세요. 청약 자격, 서류 준비, 일정 등 분양 절차에서 놓치지 말아야 할 중요한 사항들을 정리해두었습니다. 정확한 정보와 절차를 통해 분양을 성공적으로 진행할 수 있도록 돕습니다." />
-          <meta name="twitter:image" content="http://www.kikaporn.com/Main1.png" />
-          <meta name="twitter:url" content="http://www.kikaporn.com/SalesInfo/SubscriptionGuide" />
-          </Helmet> 
+    {/* SEO 최적화를 위한 메타 태그 */}
+    <title>대전하늘채스카이앤3차 - 체크포인트</title>
+    <meta
+      name="description"
+      content="대전 하늘채 스카이앤 3차분양 전 필수 체크포인트를 확인하세요. 청약 자격, 서류 준비, 일정 등 분양 절차에서 놓치지 말아야 할 중요한 사항들을 정리해두었습니다. 정확한 정보와 절차를 통해 분양을 성공적으로 진행할 수 있도록 돕습니다.
+
+
+"
+    />
+    <meta
+      name="keywords"
+      content="대전하늘채스카이앤3차, 대전하늘채스카이앤, 대전하늘채스카이앤3차모델하우스"
+    />
+    <link rel="canonical" href="https://www.kikaporn.com/SalesInfo/SubscriptionGuide" />
+
+    {/* Open Graph - 소셜 미디어 공유 최적화 */}
+    <meta
+      property="og:title"
+      content="대전하늘채스카이앤3차 - 체크포인트"
+    />
+    <meta
+      property="og:description"
+      content="대전 하늘채 스카이앤 3차분양 전 필수 체크포인트를 확인하세요. 청약 자격, 서류 준비, 일정 등 분양 절차에서 놓치지 말아야 할 중요한 사항들을 정리해두었습니다. 정확한 정보와 절차를 통해 분양을 성공적으로 진행할 수 있도록 돕습니다.
+
+
+"
+    />
+    <meta
+      property="og:image"
+      content="https://www.kikaporn.com/Main1.png"
+    />
+    <meta
+      property="og:url"
+      content="https://www.kikaporn.com/SalesInfo/SubscriptionGuide"
+    />
+    <meta property="og:site_name" content="대전하늘채스카이앤3차" />
+
+    {/* Twitter 카드 설정 */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="대전하늘채스카이앤3차 - 체크포인트"
+    />
+    <meta
+      name="twitter:description"
+      content="대전 하늘채 스카이앤 3차분양 전 필수 체크포인트를 확인하세요. 청약 자격, 서류 준비, 일정 등 분양 절차에서 놓치지 말아야 할 중요한 사항들을 정리해두었습니다. 정확한 정보와 절차를 통해 분양을 성공적으로 진행할 수 있도록 돕습니다.
+
+
+"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.kikaporn.com/Main1.png"
+    />
+    <meta
+      name="twitter:url"
+      content="https://www.kikaporn.com/SalesInfo/SubscriptionGuide"
+    />
+
+    {/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
+    <script type="application/ld+json">
+      {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "대전하늘채스카이앤3차 - 체크포인트",
+        "description": "대전 하늘채 스카이앤 3차분양 전 필수 체크포인트를 확인하세요. 청약 자격, 서류 준비, 일정 등 분양 절차에서 놓치지 말아야 할 중요한 사항들을 정리해두었습니다. 정확한 정보와 절차를 통해 분양을 성공적으로 진행할 수 있도록 돕습니다.
+
+
+
+          ",
+        "url": "https://www.kikaporn.com/SalesInfo/SubscriptionGuide"
+      }
+      `}
+    </script>
+    </Helmet> 
       
 
       <Header isChanged={isScroll} />

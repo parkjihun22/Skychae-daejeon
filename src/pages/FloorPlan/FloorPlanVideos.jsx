@@ -54,18 +54,84 @@ const FloorPlanVideos= () => {
   
   return (
     <div className={styles.container}>
-                    <Helmet>
-                    <title>대전 하늘채 스카이앤 3차 - 홍보영상</title>
-                    <meta name="description" content="세대안내영상 안내 페이지는 대전 하늘채 스카이앤 3차의 각 아파트 세대안내영상를 제공합니다. 고객들이 아파트의 구조를 정확히 이해하고, 자신의 생활 스타일에 맞는 평형을 선택할 수 있도록 돕습니다. 다양한 평면 설계를 확인하고 자신에게 맞는 최적의 공간을 찾아보세요." />
-                    <meta property="og:title" content="대전 하늘채 스카이앤 3차 - 세대안내영상" />
-                    <meta property="og:description" content="세대안내영상 안내 페이지는 대전 하늘채 스카이앤 3차의 각 아파트 세대안내영상를 제공합니다. 고객들이 아파트의 구조를 정확히 이해하고, 자신의 생활 스타일에 맞는 평형을 선택할 수 있도록 돕습니다. 다양한 평면 설계를 확인하고 자신에게 맞는 최적의 공간을 찾아보세요." />
-                    <meta property="og:image" content="https://www.vaaclubs.com/Main1.png" />
-                    <meta property="og:url" content="https://www.vaaclubs.com/FloorPlan/videos" />
-                    <meta name="twitter:title" content="대전 하늘채 스카이앤 3차 - 세대안내영상" />
-                    <meta name="twitter:description" content="세대안내영상 안내 페이지는 대전 하늘채 스카이앤 3차의 각 아파트 세대안내영상를 제공합니다. 고객들이 아파트의 구조를 정확히 이해하고, 자신의 생활 스타일에 맞는 평형을 선택할 수 있도록 돕습니다. 다양한 평면 설계를 확인하고 자신에게 맞는 최적의 공간을 찾아보세요." />
-                    <meta name="twitter:image" content="https://www.vaaclubs.com/Main1.png" />
-                    <meta name="twitter:url" content="https://www.vaaclubs.com/FloorPlan/videos" />
-                    </Helmet>
+<Helmet>
+    {/* 기본 문자셋 및 모바일 최적화를 위한 meta 태그 */}
+    <meta charSet="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="robots" content="index, follow" />
+
+    {/* SEO 최적화를 위한 메타 태그 */}
+    <title>대전하늘채스카이앤3차 - 세대안내영상</title>
+    <meta
+      name="description"
+      content="세대안내영상 안내 페이지는 대전 하늘채 스카이앤 3차의 각 아파트 세대안내영상를 제공합니다. 고객들이 아파트의 구조를 정확히 이해하고, 자신의 생활 스타일에 맞는 평형을 선택할 수 있도록 돕습니다. 다양한 평면 설계를 확인하고 자신에게 맞는 최적의 공간을 찾아보세요.
+"
+    />
+    <meta
+      name="keywords"
+      content="대전하늘채스카이앤3차, 대전하늘채스카이앤, 대전하늘채스카이앤3차모델하우스"
+    />
+    <link rel="canonical" href="https://www.kikaporn.com/" />
+
+    {/* Open Graph - 소셜 미디어 공유 최적화 */}
+    <meta
+      property="og:title"
+      content="대전하늘채스카이앤3차 - 세대안내영상"
+    />
+    <meta
+      property="og:description"
+      content="세대안내영상 안내 페이지는 대전 하늘채 스카이앤 3차의 각 아파트 세대안내영상를 제공합니다. 고객들이 아파트의 구조를 정확히 이해하고, 자신의 생활 스타일에 맞는 평형을 선택할 수 있도록 돕습니다. 다양한 평면 설계를 확인하고 자신에게 맞는 최적의 공간을 찾아보세요.
+"
+    />
+    <meta
+      property="og:image"
+      content="https://www.kikaporn.com/Main1.png"
+    />
+    <meta
+      property="og:url"
+      content="https://www.kikaporn.com/"
+    />
+    <meta property="og:site_name" content="대전하늘채스카이앤3차" />
+
+    {/* Twitter 카드 설정 */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="대전하늘채스카이앤3차 - 세대안내영상"
+    />
+    <meta
+      name="twitter:description"
+      content="세대안내영상 안내 페이지는 대전 하늘채 스카이앤 3차의 각 아파트 세대안내영상를 제공합니다. 고객들이 아파트의 구조를 정확히 이해하고, 자신의 생활 스타일에 맞는 평형을 선택할 수 있도록 돕습니다. 다양한 평면 설계를 확인하고 자신에게 맞는 최적의 공간을 찾아보세요.
+"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.kikaporn.com/Main1.png"
+    />
+    <meta
+      name="twitter:url"
+      content="https://www.kikaporn.com/"
+    />
+
+    {/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
+    <script type="application/ld+json">
+      {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "대전하늘채스카이앤3차 - 세대안내영상",
+        "description": "세대안내영상 안내 페이지는 대전 하늘채 스카이앤 3차의 각 아파트 세대안내영상를 제공합니다. 고객들이 아파트의 구조를 정확히 이해하고, 자신의 생활 스타일에 맞는 평형을 선택할 수 있도록 돕습니다. 다양한 평면 설계를 확인하고 자신에게 맞는 최적의 공간을 찾아보세요.
+
+          ",
+        "url": "https://www.kikaporn.com/"
+      }
+      `}
+    </script>
+    </Helmet>
                     <Header isChanged={isScroll} />
       <FixIcon />
 

@@ -67,19 +67,88 @@ const ComplexGuide1 = () => {
 
     return (
         <div className={styles.container}>
+<Helmet>
+    {/* 기본 문자셋 및 모바일 최적화를 위한 meta 태그 */}
+    <meta charSet="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="robots" content="index, follow" />
 
-        <Helmet>
-          <title>대전 하늘채 스카이앤 3차 - 모집공고안내</title>
-          <meta name="description" content="대전 하늘채 스카이앤 3차의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요." />
-          <meta property="og:title" content="대전 하늘채 스카이앤 3차 - 인터넷청약" />
-          <meta property="og:description" content="대전 하늘채 스카이앤 3차의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요." />
-          <meta property="og:image" content="http://www.kikaporn.com/Main1.png" />
-          <meta property="og:url" content="http://www.kikaporn.com/SalesInfo/announcement" />
-          <meta name="twitter:title" content="대전 하늘채 스카이앤 3차- 인터넷청약" />
-          <meta name="twitter:description" content="대전 하늘채 스카이앤 3차의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요." />
-          <meta name="twitter:image" content="http://www.kikaporn.com/Main1.png" />
-          <meta name="twitter:url" content="http://www.kikaporn.com/SalesInfo/announcement" />
-          </Helmet>
+    {/* SEO 최적화를 위한 메타 태그 */}
+    <title>대전하늘채스카이앤3차 - 모집공고안내</title>
+    <meta
+      name="description"
+      content="대전 하늘채 스카이앤 3차의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요.
+
+"
+    />
+    <meta
+      name="keywords"
+      content="대전하늘채스카이앤3차, 대전하늘채스카이앤, 대전하늘채스카이앤3차모델하우스"
+    />
+    <link rel="canonical" href="https://www.kikaporn.com/SalesInfo/announcement" />
+
+    {/* Open Graph - 소셜 미디어 공유 최적화 */}
+    <meta
+      property="og:title"
+      content="대전하늘채스카이앤3차 - 모집공고안내"
+    />
+    <meta
+      property="og:description"
+      content="대전 하늘채 스카이앤 3차의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요.
+
+"
+    />
+    <meta
+      property="og:image"
+      content="https://www.kikaporn.com/Main1.png"
+    />
+    <meta
+      property="og:url"
+      content="https://www.kikaporn.com/SalesInfo/announcement"
+    />
+    <meta property="og:site_name" content="대전하늘채스카이앤3차" />
+
+    {/* Twitter 카드 설정 */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="대전하늘채스카이앤3차 - 모집공고안내"
+    />
+    <meta
+      name="twitter:description"
+      content="대전 하늘채 스카이앤 3차의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요.
+
+"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.kikaporn.com/Main1.png"
+    />
+    <meta
+      name="twitter:url"
+      content="https://www.kikaporn.com/SalesInfo/announcement"
+    />
+
+    {/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
+    <script type="application/ld+json">
+      {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "대전하늘채스카이앤3차 - 모집공고안내",
+        "description": "대전 하늘채 스카이앤 3차의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요.
+
+
+          ",
+        "url": "https://www.kikaporn.com/SalesInfo/announcement"
+      }
+      `}
+    </script>
+    </Helmet>
 
             <Header isChanged={isScroll} />
             <FixIcon />

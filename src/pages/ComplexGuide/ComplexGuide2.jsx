@@ -48,19 +48,84 @@ const ComplexGuide1 = () => {
 
 	return (
 		<div className={styles.container}>
+<Helmet>
+		{/* 기본 문자셋 및 모바일 최적화를 위한 meta 태그 */}
+		<meta charSet="utf-8" />
+		<meta
+		  name="viewport"
+		  content="width=device-width, initial-scale=1, maximum-scale=1"
+		/>
+		<meta name="theme-color" content="#ffffff" />
+		<meta name="robots" content="index, follow" />
 
-			<Helmet>
-				<title>대전 하늘채 스카이앤 3차 - 호수배치도</title>
-				<meta name="description" content="대전 하늘채 스카이앤 3차의 호수 배치도를 통해 각 세대의 위치와 전망을 확인하세요. 주거 만족도를 높이는 체계적인 배치 설계로 더 나은 라이프스타일을 제안합니다." />
-				<meta property="og:title" content="대전 하늘채 스카이앤 3차 - 호수배치도" />
-				<meta property="og:description" content="대전 하늘채 스카이앤 3차의 호수 배치도를 통해 각 세대의 위치와 전망을 확인하세요. 주거 만족도를 높이는 체계적인 배치 설계로 더 나은 라이프스타일을 제안합니다." />
-				<meta property="og:image" content="http://www.kikaporn.com/Main1.png" />
-				<meta property="og:url" content="http://www.kikaporn.com/ComplexGuide/detailintro" />
-				<meta name="twitter:title" content="대전 하늘채 스카이앤 3차 - 호수배치도" />
-				<meta name="twitter:description" content="대전 하늘채 스카이앤 3차의 호수 배치도를 통해 각 세대의 위치와 전망을 확인하세요. 주거 만족도를 높이는 체계적인 배치 설계로 더 나은 라이프스타일을 제안합니다." />
-				<meta name="twitter:image" content="http://www.kikaporn.com/Main1.png" />
-				<meta name="twitter:url" content="http://www.kikaporn.com/ComplexGuide/detailintro" />
-			</Helmet> 
+		{/* SEO 최적화를 위한 메타 태그 */}
+		<title>대전하늘채스카이앤3차 - 호수배치도</title>
+		<meta
+		  name="description"
+		  content="대전 하늘채 스카이앤 3차의 호수 배치도를 통해 각 세대의 위치와 전망을 확인하세요. 주거 만족도를 높이는 체계적인 배치 설계로 더 나은 라이프스타일을 제안합니다.
+"
+		/>
+		<meta
+		  name="keywords"
+		  content="대전하늘채스카이앤3차, 대전하늘채스카이앤, 대전하늘채스카이앤3차모델하우스"
+		/>
+		<link rel="canonical" href="https://www.kikaporn.com/ComplexGuide/detailintro" />
+
+		{/* Open Graph - 소셜 미디어 공유 최적화 */}
+		<meta
+		  property="og:title"
+		  content="대전하늘채스카이앤3차 - 호수배치도"
+		/>
+		<meta
+		  property="og:description"
+		  content="대전 하늘채 스카이앤 3차의 호수 배치도를 통해 각 세대의 위치와 전망을 확인하세요. 주거 만족도를 높이는 체계적인 배치 설계로 더 나은 라이프스타일을 제안합니다.
+"
+		/>
+		<meta
+		  property="og:image"
+		  content="https://www.kikaporn.com/Main1.png"
+		/>
+		<meta
+		  property="og:url"
+		  content="https://www.kikaporn.com/ComplexGuide/detailintro"
+		/>
+		<meta property="og:site_name" content="대전하늘채스카이앤3차" />
+
+		{/* Twitter 카드 설정 */}
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta
+		  name="twitter:title"
+		  content="대전하늘채스카이앤3차 - 호수배치도"
+		/>
+		<meta
+		  name="twitter:description"
+		  content="대전 하늘채 스카이앤 3차의 호수 배치도를 통해 각 세대의 위치와 전망을 확인하세요. 주거 만족도를 높이는 체계적인 배치 설계로 더 나은 라이프스타일을 제안합니다.
+"
+		/>
+		<meta
+		  name="twitter:image"
+		  content="https://www.kikaporn.com/Main1.png"
+		/>
+		<meta
+		  name="twitter:url"
+		  content="https://www.kikaporn.com/ComplexGuide/detailintro"
+		/>
+
+		{/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
+		<script type="application/ld+json">
+		  {`
+			{
+				"@context": "https://schema.org",
+				"@type": "WebPage",
+				"name": "대전하늘채스카이앤3차 - 호수배치도",
+				"description": "대전 하늘채 스카이앤 3차의 호수 배치도를 통해 각 세대의 위치와 전망을 확인하세요. 주거 만족도를 높이는 체계적인 배치 설계로 더 나은 라이프스타일을 제안합니다.
+
+					",
+				"url": "https://www.kikaporn.com/ComplexGuide/detailintro"
+			}
+			`}
+		</script>
+	  </Helmet>
 
 			<Header isChanged={isScroll} />
 			<FixIcon />
@@ -86,7 +151,7 @@ const ComplexGuide1 = () => {
 
 			{/* <div className={styles.commonBox}>
 				<div className={styles.notice}>
-					※ 상기 단지배치도 이미지는 소비자의 이해를 돕기 위한 것으로 실제와 차이가 날 수 있습니다
+					※ 상기 호수배치도 이미지는 소비자의 이해를 돕기 위한 것으로 실제와 차이가 날 수 있습니다
 				</div>
 				<div className={styles.notice}>
 					※ 단지 내 조경 및 세부 식재계획, 시설물의 위치는 실제 시공시 현장 상황에 따라 변경될 수 있습니다
