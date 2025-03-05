@@ -13,6 +13,8 @@ import UnitplanBox from "../../components/UnitplanBox/UnitplanBox";
 import MobilePopup from "../../components/MobilePopup/MobilePopup";
 import Popup from "../../components/Popup/Popup";
 import MobileSectionBox from "../../components/MobileSectionBox/MobileSectionBox";
+import UrlContainer from "../../components/UrlContainer/UrlContainer";
+
 
 import mainImage from "../../assets/Main/Main1.jpg";
 import section1_Image1 from "../../assets/Main/section1-img1.jpg";
@@ -156,84 +158,7 @@ const Main = () => {
 
   return (
     <>
-    <Helmet>
-        {/* 기본 문자셋 및 모바일 최적화를 위한 meta 태그 */}
-        <meta charSet="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1"
-        />
-
-        {/* SEO 최적화를 위한 메타 태그 추가 */}
-        <title>대전 하늘채 스카이앤 3차</title>
-        <meta
-          name="description"
-          content="대전 하늘채 스카이앤3차ㅣ대전하늘채스카이앤ㅣ대전하늘채스카이앤모델하우스ㅣ방문예약ㅣ대전 코오롱하늘채 스카이앤 3차 모델하우스"
-        />
-        <meta
-          name="keywords"
-          content="대전하늘채스카이앤3차, 대전하늘채스카이앤, 대전하늘채스카이앤3차모델하우스"
-        />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.kikaporn.com/" />
-
-        {/* 모바일 친화성을 위한 추가 태그 */}
-        <meta name="HandheldFriendly" content="True" />
-        <meta name="theme-color" content="#ffffff" />
-
-        {/* Open Graph - 소셜 미디어(페이스북, LinkedIn 등) 공유 최적화 */}
-        <meta
-          property="og:title"
-          content="대전 하늘채 스카이앤 3차"
-        />
-        <meta
-          property="og:description"
-          content="대전 하늘채 스카이앤 3차[대표:☎1533-8848]ㅣ대전 하늘채 스카이앤 3차 모델하우스ㅣ분양가안내ㅣ잔여세대안내ㅣ평택 대전 하늘채 스카이앤 3차"
-        />
-        <meta property="og:url" content="https://www.kikaporn.com/" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://www.kikaporn.com/Main1.png" // 실제 메인 이미지 URL로 변경하세요.
-        />
-
-        {/* Twitter 카드 설정 */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="대전 하늘채스카이앤 3차"
-        />
-        <meta
-          name="twitter:description"
-          content="대전 하늘채 스카이앤 3차[대표:☎1533-8848]ㅣ대전 하늘채 스카이앤 3차 모델하우스ㅣ분양가안내ㅣ잔여세대안내ㅣ평택 대전 하늘채 스카이앤 3차"
-        />
-        <meta
-          name="twitter:image"
-          content="https://www.kikaporn.com/Main1.png" // 실제 이미지 URL로 변경하세요.
-        />
-
-        {/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도를 높이기 위한 스키마 마크업 */}
-        <script type="application/ld+json">
-          {`
-      {
-        "@context": "http://schema.org",
-        "@type": "ApartmentComplex",
-        "name": "대전 하늘채 스카이앤 3차",
-        "description": "브랜드 평판 1위 프리미엄 아파트. 방문 예약 시 신세계상품권 증정 등 다양한 혜택을 제공합니다.",
-        "url": "https://www.kikaporn.com/",
-        "image": "https://www.kikaporn.com/Main1.png",
-        "telephone": "1533-8848",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "대전 하늘채 스카이앤",
-          "addressLocality": "대전광역시",
-          "addressRegion": "대전시",
-          "postalCode": "우편번호"
-        }
-      }
-    `}
-        </script>
-      </Helmet>
+    
       {!isMobile ? (
         // PC 버전
         <>
@@ -502,6 +427,7 @@ const Main = () => {
           </div> */}
 
           <div className={styles.section5}>
+            <UrlContainer />
             <Footer />
           </div>
           {/* 방문예약 팝업 (PC) */}
@@ -717,6 +643,7 @@ const Main = () => {
           </div> */}
 
           <div className={styles.section5}>
+            <UrlContainer />
             <Footer />
             <FixIcon />
           </div>

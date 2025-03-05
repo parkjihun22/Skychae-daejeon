@@ -1,125 +1,171 @@
 /* InterestPopup.module.scss */
 .popupOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
+  position: fixed;
+  top: 1vw;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100;
+}
+
+.popupContainer {
+  background: #fff;
+  width: 60%;
+  max-width: 30%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  color: #333;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.headerImage {
+  width: 100%;
+  height: 40%;    // 이미지의 높이는 유지
+  overflow: hidden;
+  img {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1100;
+    object-fit: cover;  // 이미지 비율 유지
   }
-  
-  .popupContainer {
-    background: #fff;
-    width: 90%;
-    max-width: 600px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .closeBtn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: transparent;
-    border: none;
-    font-size: 1.8rem;
+}
+
+.formContainer {
+  width: 95%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  // 중앙 정렬
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
     color: #333;
-    cursor: pointer;
-    z-index: 2;
+    font-size: 1.5rem;
   }
-  
-  .headerImage {
-    width: 100%;
-    height: 40%;    // 이미지의 높이는 유지
-    overflow: hidden;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;  // 이미지 비율 유지
-    }
-  }
-  
-  .formContainer {
-    width: 94%;
-    padding: 20px;
+
+  form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5vw;
+    align-items: center;  // 수평 중앙 정렬
+    width: 100%;
     justify-content: center;
-    align-items: center;  // 중앙 정렬
-  
-    h2 {
+
+    label {
+      font-size: 20px;
+      color: #555;
+      margin-bottom: 5px;
       text-align: center;
-      margin-bottom: 20px;
-      color: #333;
-      font-size: 1.5rem;
-    }
-  
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-    }
-  
-    .formGroup {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 15px;
-      align-items: center;  // 수평 중앙 정렬
-      width: 100%;
-      justify-content: center;
-  
-      label {
-        font-size: 20px;
-        color: #555;
-        margin-bottom: 5px;
-        text-align: center;
-        span {
-          color: red;
-          margin-left: 3px;
-        }
-      }
-  
-      input {
-        padding: 12px;
-        font-size: 16px;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        transition: border-color 0.3s;
-        text-align: center;
-        width: 70%;      // 입력창이 부모 너비에 맞춰 넓게 채워짐
-        max-width: 400px; // 최대 너비 설정
-        margin: 0 auto;   // 중앙 정렬
-        display: block;   // block 요소로 만들어서 자동으로 중앙 정렬
-  
-        &:focus {
-          outline: none;
-          border-color: #095052;
-        }
+      span {
+        color: red;
+        margin-left: 3px;
       }
     }
-  
-    .submitBtn {
+
+    input {
       padding: 12px;
       font-size: 16px;
-      background-color: #095052;
-      color: #fff;
-      border: none;
+      border: 1px solid #ddd;
       border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-  
-      &:hover {
-        background-color: #095052;
+      transition: border-color 0.3s;
+      text-align: center;
+      width: 70%;      // 입력창이 부모 너비에 맞춰 넓게 채워짐
+      max-width: 400px; // 최대 너비 설정
+      margin: 0 auto;   // 중앙 정렬
+      display: block;   // block 요소로 만들어서 자동으로 중앙 정렬
+
+      &:focus {
+        outline: none;
+        border-color: #07456E;
       }
     }
   }
-  
+
+  .submitBtn {
+    width: 70%;
+    padding: 0.5vw;
+    font-size: 1vw;
+    font-family: 'GongGothicMedium';
+    background-color: #07456E;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+    &:hover {
+      background-color: #07456E;
+    }
+  }
+}
+
+/* 모바일 전용 미디어 쿼리 */
+@media screen and (max-width: 768px) {
+  .popupContainer {
+    width: 90%;
+    max-width: 90%;
+  }
+  .headerImage {
+    height: 50%; // 모바일 환경에 맞게 이미지 높이 조정
+  }
+  .formContainer {
+    h2 {
+      font-size: 1.8rem;
+    }
+    .formGroup {
+      margin-bottom: 1rem;
+      label {
+        font-size: 1.2rem;
+      }
+      input {
+        width: 80%;
+        font-size: 1rem;
+        padding: 10px;
+      }
+    }
+    .submitBtn {
+      width: 80%;
+      font-size: 1rem;
+      padding: 0.8rem;
+    }
+  }
+}
+
+
+.successMessage {
+  font-size: 0.9vw; /* PC 버전에서의 기본 폰트 크기 */
+  color: #000000; /* 기본 글자 색상 */
+}
+
+/* 모바일 버전 스타일 */
+@media screen and (max-width: 768px) {
+  .successMessage {
+    font-size: 2.3vw; /* 모바일에서의 폰트 크기 */
+    color: #000000; /* 모바일에서의 글자 색상 (예: 빨간색) */
+  }
+}

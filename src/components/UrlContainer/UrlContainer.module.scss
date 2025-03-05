@@ -1,0 +1,120 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3.5vw;
+
+    width: 100%;
+    height: 60vh;
+
+    background-color: #fff6ea;
+
+    .title {
+        font-family: 'Gyeonggi_Title_Medium';
+        font-size: 1.5vw;
+        font-weight: 500;
+    }
+
+    .urlContainer {
+        /* ✅ 대소문자 맞춤 */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0 0 3vw 0;
+
+        .navButton {
+            padding: 1vw;
+            color: #333;
+            font-size: 2vw;
+            background: none;
+            border: none;
+            cursor: pointer;
+
+            &:disabled {
+                opacity: 0.3;
+                cursor: not-allowed;
+            }
+        }
+
+        .innerContainer {
+            display: flex;
+            width: 80vw;
+            scroll-behavior: smooth;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .urlContent {
+            flex: 0 0 15vw;
+            /* ✅ itemWidth와 맞춤 */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            margin: 0 0.5vw;
+            transition: transform 0.3s ease-in-out;
+
+            text-decoration: none;
+            color: inherit;
+
+            img {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 4 / 3;
+                border-radius: 0.5vw;
+            }
+
+            div {
+                font-family: 'Gyeonggi_Title_Medium';
+                margin: 1vw 0 0 0;
+                width: 90%;
+
+                text-align: center;
+                white-space: nowrap;
+                overflow: hidden; 
+                text-overflow: ellipsis;
+
+                font-size: 1vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        justify-content: center;
+        gap: 3.5vw;
+        height: 60vw;
+
+        background-color: #fff6ea;
+
+        .title {
+            font-size: 5vw;
+            margin-bottom: 4vw;
+        }
+
+        .urlContainer {
+            .navButton {
+                padding: 2vw;
+                font-size: 3vw;
+            }
+
+            .urlContent {
+                flex: 0 0 25vw;
+                margin: 0 1vw;
+
+                img {
+                    border-radius: 2vw;
+                }
+
+                div {
+                    font-size: 2vw;
+                }
+            }
+        }
+    }
+}
