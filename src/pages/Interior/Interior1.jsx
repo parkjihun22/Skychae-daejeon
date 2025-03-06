@@ -73,7 +73,7 @@ const Interior1 = () => {
 	  name="keywords"
 	  content="대전하늘채스카이앤3차, 대전하늘채스카이앤, 대전하늘채스카이앤3차모델하우스"
 	/>
-	<link rel="canonical" href="hhttps://www.kikaporn.com/Interior/59A" />
+	<link rel="canonical" href="hhttps://buysildenafilv.com/Interior/59A" />
 
 	{/* Open Graph - 소셜 미디어 공유 최적화 */}
 	<meta
@@ -87,11 +87,11 @@ const Interior1 = () => {
 	/>
 	<meta
 	  property="og:image"
-	  content="https://www.kikaporn.com/Main1.png"
+	  content="https://buysildenafilv.com/Main1.png"
 	/>
 	<meta
 	  property="og:url"
-	  content="https://www.kikaporn.com/Interior/59A"
+	  content="https://buysildenafilv.com/Interior/59A"
 	/>
 	<meta property="og:site_name" content="대전하늘채스카이앤3차" />
 
@@ -108,11 +108,11 @@ const Interior1 = () => {
 	/>
 	<meta
 	  name="twitter:image"
-	  content="https://www.kikaporn.com/Main1.png"
+	  content="https://buysildenafilv.com/Main1.png"
 	/>
 	<meta
 	  name="twitter:url"
-	  content="https://www.kikaporn.com/Interior/59A"
+	  content="https://buysildenafilv.com/Interior/59A"
 	/>
 
 	{/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
@@ -125,7 +125,7 @@ const Interior1 = () => {
 		"description": "인테리어 페이지에서는 대전 하늘채 스카이앤 3차의 고급 인테리어 디자인을 소개합니다. 세련된 디자인과 최첨단 인테리어 요소들이 결합되어, 입주자들에게 고급스러움과 편안함을 제공합니다. 각 공간의 인테리어 스타일과 자재를 확인하여 더욱 매력적인 주거 공간을 발견할 수 있습니다.
 
 		  ",
-		"url": "https://www.kikaporn.com/Interior/59A"
+		"url": "https://buysildenafilv.com/Interior/59A"
 	  }
 	  `}
 	</script>

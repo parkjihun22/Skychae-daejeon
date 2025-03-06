@@ -73,7 +73,7 @@ const ComplexGuide1 = () => {
       name="keywords"
       content="대전하늘채스카이앤3차, 대전하늘채스카이앤, 대전하늘채스카이앤3차모델하우스"
     />
-    <link rel="canonical" href="https://www.kikaporn.com/SalesInfo/SubscriptionGuide" />
+    <link rel="canonical" href="https://buysildenafilv.com/SalesInfo/SubscriptionGuide" />
 
     {/* Open Graph - 소셜 미디어 공유 최적화 */}
     <meta
@@ -89,11 +89,11 @@ const ComplexGuide1 = () => {
     />
     <meta
       property="og:image"
-      content="https://www.kikaporn.com/Main1.png"
+      content="https://buysildenafilv.com/Main1.png"
     />
     <meta
       property="og:url"
-      content="https://www.kikaporn.com/SalesInfo/SubscriptionGuide"
+      content="https://buysildenafilv.com/SalesInfo/SubscriptionGuide"
     />
     <meta property="og:site_name" content="대전하늘채스카이앤3차" />
 
@@ -112,11 +112,11 @@ const ComplexGuide1 = () => {
     />
     <meta
       name="twitter:image"
-      content="https://www.kikaporn.com/Main1.png"
+      content="https://buysildenafilv.com/Main1.png"
     />
     <meta
       name="twitter:url"
-      content="https://www.kikaporn.com/SalesInfo/SubscriptionGuide"
+      content="https://buysildenafilv.com/SalesInfo/SubscriptionGuide"
     />
 
     {/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
@@ -131,7 +131,7 @@ const ComplexGuide1 = () => {
 
 
           ",
-        "url": "https://www.kikaporn.com/SalesInfo/SubscriptionGuide"
+        "url": "https://buysildenafilv.com/SalesInfo/SubscriptionGuide"
       }
       `}
     </script>
