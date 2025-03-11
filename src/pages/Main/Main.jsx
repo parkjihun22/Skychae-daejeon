@@ -13,7 +13,7 @@ import UnitplanBox from "../../components/UnitplanBox/UnitplanBox";
 import MobilePopup from "../../components/MobilePopup/MobilePopup";
 import Popup from "../../components/Popup/Popup";
 import MobileSectionBox from "../../components/MobileSectionBox/MobileSectionBox";
-import UrlContainer from "../../components/UrlContainer/UrlContainer";
+// import UrlContainer from "../../components/UrlContainer/UrlContainer";
 
 
 import mainImage from "../../assets/Main/Main1.jpg";
@@ -427,7 +427,7 @@ const Main = () => {
           </div> */}
 
           <div className={styles.section5}>
-            <UrlContainer />
+
             <Footer />
           </div>
           {/* 방문예약 팝업 (PC) */}
@@ -643,7 +643,6 @@ const Main = () => {
           </div> */}
 
           <div className={styles.section5}>
-            <UrlContainer />
             <Footer />
             <FixIcon />
           </div>
