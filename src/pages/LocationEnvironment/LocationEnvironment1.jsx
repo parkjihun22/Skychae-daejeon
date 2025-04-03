@@ -84,7 +84,7 @@ const LocationEnvironment1 = () => {
 	  name="keywords"
 	  content="대전하늘채스카이앤3차, 대전하늘채스카이앤, 대전하늘채스카이앤3차모델하우스"
 	/>
-	<link rel="canonical" href="https://buysildenafilv.com/LocationEnvironment/intro" />
+	<link rel="canonical" href="https://www.baekyangsa.kr/LocationEnvironment/intro" />
 
 	{/* Open Graph - 소셜 미디어 공유 최적화 */}
 	<meta
@@ -98,11 +98,11 @@ const LocationEnvironment1 = () => {
 	/>
 	<meta
 	  property="og:image"
-	  content="https://buysildenafilv.com/Main1.png"
+	  content="https://www.baekyangsa.kr/Main1.png"
 	/>
 	<meta
 	  property="og:url"
-	  content="https://buysildenafilv.com/LocationEnvironment/intro"
+	  content="https://www.baekyangsa.kr/LocationEnvironment/intro"
 	/>
 	<meta property="og:site_name" content="대전하늘채스카이앤3차" />
 
@@ -119,11 +119,11 @@ const LocationEnvironment1 = () => {
 	/>
 	<meta
 	  name="twitter:image"
-	  content="https://buysildenafilv.com/Main1.png"
+	  content="https://www.baekyangsa.kr/Main1.png"
 	/>
 	<meta
 	  name="twitter:url"
-	  content="https://buysildenafilv.com/LocationEnvironment/intro"
+	  content="https://www.baekyangsa.kr/LocationEnvironment/intro"
 	/>
 
 	{/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
@@ -136,7 +136,7 @@ const LocationEnvironment1 = () => {
 		"description": "대전 하늘채 스카이앤 3차의 입지 정보를 확인하세요. 뛰어난 교통망, 생활 인프라, 교육 및 쇼핑 시설 등 편리한 주변 환경을 소개하며, 평택의 중심에서 누릴 수 있는 생활의 편리함과 가치를 제공합니다
 
 		  ",
-		"url": "https://buysildenafilv.com/LocationEnvironment/intro"
+		"url": "https://www.baekyangsa.kr/LocationEnvironment/intro"
 	  }
 	  `}
 	</script>

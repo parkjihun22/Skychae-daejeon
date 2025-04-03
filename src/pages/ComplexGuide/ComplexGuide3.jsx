@@ -71,7 +71,7 @@ const ComplexGuide3 = () => {
 		  name="keywords"
 		  content="대전하늘채스카이앤3차, 대전하늘채스카이앤, 대전하늘채스카이앤3차모델하우스"
 		/>
-		<link rel="canonical" href="https://buysildenafilv.com/ComplexGuide/community" />
+		<link rel="canonical" href="https://www.baekyangsa.kr/ComplexGuide/community" />
 
 		{/* Open Graph - 소셜 미디어 공유 최적화 */}
 		<meta
@@ -85,11 +85,11 @@ const ComplexGuide3 = () => {
 		/>
 		<meta
 		  property="og:image"
-		  content="https://buysildenafilv.com/Main1.png"
+		  content="https://www.baekyangsa.kr/Main1.png"
 		/>
 		<meta
 		  property="og:url"
-		  content="https://buysildenafilv.com/ComplexGuide/community"
+		  content="https://www.baekyangsa.kr/ComplexGuide/community"
 		/>
 		<meta property="og:site_name" content="대전하늘채스카이앤3차" />
 
@@ -106,11 +106,11 @@ const ComplexGuide3 = () => {
 		/>
 		<meta
 		  name="twitter:image"
-		  content="https://buysildenafilv.com/Main1.png"
+		  content="https://www.baekyangsa.kr/Main1.png"
 		/>
 		<meta
 		  name="twitter:url"
-		  content="https://buysildenafilv.com/ComplexGuide/community"
+		  content="https://www.baekyangsa.kr/ComplexGuide/community"
 		/>
 
 		{/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
@@ -123,7 +123,7 @@ const ComplexGuide3 = () => {
 				"description": "대전 하늘채 스카이앤 3차의 커뮤니티 시설을 소개합니다. 피트니스 센터, 독서실, 카페 등 다양한 편의시설이 마련되어 있어 입주민의 생활 품격을 높이고, 편리함을 제공합니다.
 
 					",
-				"url": "https://buysildenafilv.com/ComplexGuide/community"
+				"url": "https://www.baekyangsa.kr/ComplexGuide/community"
 			}
 			`}
 		</script>

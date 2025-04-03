@@ -78,7 +78,7 @@ const BusinessGuide1 = () => {
 		  name="keywords"
 		  content="대전하늘채스카이앤3차, 대전하늘채스카이앤, 대전하늘채스카이앤3차모델하우스"
 		/>
-		<link rel="canonical" href="https://buysildenafilv.com/BusinessGuide/intro" />
+		<link rel="canonical" href="https://www.baekyangsa.kr/BusinessGuide/intro" />
 
 		{/* Open Graph - 소셜 미디어 공유 최적화 */}
 		<meta
@@ -92,11 +92,11 @@ const BusinessGuide1 = () => {
 		/>
 		<meta
 		  property="og:image"
-		  content="https://buysildenafilv.com/Main1.png"
+		  content="https://www.baekyangsa.kr/Main1.png"
 		/>
 		<meta
 		  property="og:url"
-		  content="https://buysildenafilv.com/BusinessGuide/intro"
+		  content="https://www.baekyangsa.kr/BusinessGuide/intro"
 		/>
 		<meta property="og:site_name" content="대전하늘채스카이앤3차" />
 
@@ -113,11 +113,11 @@ const BusinessGuide1 = () => {
 		/>
 		<meta
 		  name="twitter:image"
-		  content="https://buysildenafilv.com/Main1.png"
+		  content="https://www.baekyangsa.kr/Main1.png"
 		/>
 		<meta
 		  name="twitter:url"
-		  content="https://buysildenafilv.com/BusinessGuide/intro"
+		  content="https://www.baekyangsa.kr/BusinessGuide/intro"
 		/>
 
 		{/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
@@ -130,7 +130,7 @@ const BusinessGuide1 = () => {
 				"description": "대전 하늘채 스카이앤 3차의 사업개요를 통해 프로젝트의 비전과 가치를 확인하세요. 단지 설계, 개발 목표, 주변 환경과의 조화 등을 중점적으로 설명하여 평택에서의 새로운 주거 중심지로서의 가능성을 보여드립니다.
 
 					",
-				"url": "https://buysildenafilv.com/BusinessGuide/intro"
+				"url": "https://www.baekyangsa.kr/BusinessGuide/intro"
 			}
 			`}
 		</script>

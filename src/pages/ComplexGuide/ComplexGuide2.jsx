@@ -69,7 +69,7 @@ const ComplexGuide1 = () => {
 		  name="keywords"
 		  content="대전하늘채스카이앤3차, 대전하늘채스카이앤, 대전하늘채스카이앤3차모델하우스"
 		/>
-		<link rel="canonical" href="https://buysildenafilv.com/ComplexGuide/detailintro" />
+		<link rel="canonical" href="https://www.baekyangsa.kr/ComplexGuide/detailintro" />
 
 		{/* Open Graph - 소셜 미디어 공유 최적화 */}
 		<meta
@@ -83,11 +83,11 @@ const ComplexGuide1 = () => {
 		/>
 		<meta
 		  property="og:image"
-		  content="https://buysildenafilv.com/Main1.png"
+		  content="https://www.baekyangsa.kr/Main1.png"
 		/>
 		<meta
 		  property="og:url"
-		  content="https://buysildenafilv.com/ComplexGuide/detailintro"
+		  content="https://www.baekyangsa.kr/ComplexGuide/detailintro"
 		/>
 		<meta property="og:site_name" content="대전하늘채스카이앤3차" />
 
@@ -104,11 +104,11 @@ const ComplexGuide1 = () => {
 		/>
 		<meta
 		  name="twitter:image"
-		  content="https://buysildenafilv.com/Main1.png"
+		  content="https://www.baekyangsa.kr/Main1.png"
 		/>
 		<meta
 		  name="twitter:url"
-		  content="https://buysildenafilv.com/ComplexGuide/detailintro"
+		  content="https://www.baekyangsa.kr/ComplexGuide/detailintro"
 		/>
 
 		{/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
@@ -121,7 +121,7 @@ const ComplexGuide1 = () => {
 				"description": "대전 하늘채 스카이앤 3차의 호수 배치도를 통해 각 세대의 위치와 전망을 확인하세요. 주거 만족도를 높이는 체계적인 배치 설계로 더 나은 라이프스타일을 제안합니다.
 
 					",
-				"url": "https://buysildenafilv.com/ComplexGuide/detailintro"
+				"url": "https://www.baekyangsa.kr/ComplexGuide/detailintro"
 			}
 			`}
 		</script>

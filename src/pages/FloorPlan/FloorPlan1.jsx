@@ -78,7 +78,7 @@ const FloorPlan1 = () => {
 		  name="keywords"
 		  content="대전하늘채스카이앤3차, 대전하늘채스카이앤, 대전하늘채스카이앤3차모델하우스"
 		/>
-		<link rel="canonical" href="https://buysildenafilv.com/FloorPlan/59A" />
+		<link rel="canonical" href="https://www.baekyangsa.kr/FloorPlan/59A" />
 
 		{/* Open Graph - 소셜 미디어 공유 최적화 */}
 		<meta
@@ -92,11 +92,11 @@ const FloorPlan1 = () => {
 		/>
 		<meta
 		  property="og:image"
-		  content="https://buysildenafilv.com/Main1.png"
+		  content="https://www.baekyangsa.kr/Main1.png"
 		/>
 		<meta
 		  property="og:url"
-		  content="https://buysildenafilv.com/FloorPlan/59A"
+		  content="https://www.baekyangsa.kr/FloorPlan/59A"
 		/>
 		<meta property="og:site_name" content="대전하늘채스카이앤3차" />
 
@@ -113,11 +113,11 @@ const FloorPlan1 = () => {
 		/>
 		<meta
 		  name="twitter:image"
-		  content="https://buysildenafilv.com/Main1.png"
+		  content="https://www.baekyangsa.kr/Main1.png"
 		/>
 		<meta
 		  name="twitter:url"
-		  content="https://buysildenafilv.com/FloorPlan/59A"
+		  content="https://www.baekyangsa.kr/FloorPlan/59A"
 		/>
 
 		{/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
@@ -130,7 +130,7 @@ const FloorPlan1 = () => {
 				"description": "대전 하늘채 스카이앤 3차의 평면도를 통해 세대별 구조와 공간 활용도를 확인하세요. 실용적이고 혁신적인 설계를 기반으로 한 다양한 평면 구성이 여러분의 생활을 더 편리하게 만듭니다.
 
 					",
-				"url": "https://buysildenafilv.com/FloorPlan/59A"
+				"url": "https://www.baekyangsa.kr/FloorPlan/59A"
 			}
 			`}
 		</script>

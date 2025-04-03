@@ -71,7 +71,7 @@ const BusinessGuide2 = () => {
 		  name="keywords"
 		  content="대전하늘채스카이앤3차, 대전하늘채스카이앤, 대전하늘채스카이앤3차모델하우스"
 		/>
-		<link rel="canonical" href="https://buysildenafilv.com/BusinessGuide/plan" />
+		<link rel="canonical" href="https://www.baekyangsa.kr/BusinessGuide/plan" />
 
 		{/* Open Graph - 소셜 미디어 공유 최적화 */}
 		<meta
@@ -85,11 +85,11 @@ const BusinessGuide2 = () => {
 		/>
 		<meta
 		  property="og:image"
-		  content="https://buysildenafilv.com/Main1.png"
+		  content="https://www.baekyangsa.kr/Main1.png"
 		/>
 		<meta
 		  property="og:url"
-		  content="https://buysildenafilv.com/BusinessGuide/plan"
+		  content="https://www.baekyangsa.kr/BusinessGuide/plan"
 		/>
 		<meta property="og:site_name" content="대전하늘채스카이앤3차" />
 
@@ -106,11 +106,11 @@ const BusinessGuide2 = () => {
 		/>
 		<meta
 		  name="twitter:image"
-		  content="https://buysildenafilv.com/Main1.png"
+		  content="https://www.baekyangsa.kr/Main1.png"
 		/>
 		<meta
 		  name="twitter:url"
-		  content="https://buysildenafilv.com/BusinessGuide/plan"
+		  content="https://www.baekyangsa.kr/BusinessGuide/plan"
 		/>
 
 		{/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
@@ -123,7 +123,7 @@ const BusinessGuide2 = () => {
 				"description": "대전 하늘채 스카이앤 3차의 최신 분양일정을 확인하세요. 청약 일정, 분양 절차, 주요 조건을 명확히 안내하여 분양 준비에 필요한 정보를 제공합니다. 평택에서 새로운 라이프스타일을 시작할 기회를 놓치지 마세요. 힐스테이트의 고급스러운 주거공간에서 미래를 계획해보세요.
 
 					",
-				"url": "https://buysildenafilv.com/BusinessGuide/plan"
+				"url": "https://www.baekyangsa.kr/BusinessGuide/plan"
 			}
 			`}
 		</script>
