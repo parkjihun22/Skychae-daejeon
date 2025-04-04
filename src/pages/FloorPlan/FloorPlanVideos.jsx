@@ -75,7 +75,7 @@ const FloorPlanVideos= () => {
       name="keywords"
       content="대전하늘채스카이앤3차, 대전하늘채스카이앤, 대전하늘채스카이앤3차모델하우스"
     />
-    <link rel="canonical" href="https://www.kikaporn.com/" />
+    <link rel="canonical" href="https://www.gidam.kr/" />
 
     {/* Open Graph - 소셜 미디어 공유 최적화 */}
     <meta
@@ -89,11 +89,11 @@ const FloorPlanVideos= () => {
     />
     <meta
       property="og:image"
-      content="https://www.kikaporn.com/Main1.png"
+      content="https://www.gidam.kr/Main1.png"
     />
     <meta
       property="og:url"
-      content="https://www.kikaporn.com/"
+      content="https://www.gidam.kr/"
     />
     <meta property="og:site_name" content="대전하늘채스카이앤3차" />
 
@@ -110,11 +110,11 @@ const FloorPlanVideos= () => {
     />
     <meta
       name="twitter:image"
-      content="https://www.kikaporn.com/Main1.png"
+      content="https://www.gidam.kr/Main1.png"
     />
     <meta
       name="twitter:url"
-      content="https://www.kikaporn.com/"
+      content="https://www.gidam.kr/"
     />
 
     {/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
@@ -127,7 +127,7 @@ const FloorPlanVideos= () => {
         "description": "세대안내영상 안내 페이지는 대전 하늘채 스카이앤 3차의 각 아파트 세대안내영상를 제공합니다. 고객들이 아파트의 구조를 정확히 이해하고, 자신의 생활 스타일에 맞는 평형을 선택할 수 있도록 돕습니다. 다양한 평면 설계를 확인하고 자신에게 맞는 최적의 공간을 찾아보세요.
 
           ",
-        "url": "https://www.kikaporn.com/"
+        "url": "https://www.gidam.kr/"
       }
       `}
     </script>
